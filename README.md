@@ -3,7 +3,7 @@ This repository records the lab work done in the applied statistics course of my
 
 ## Lab sessions
 
-- Lab 1:
+- Lab 1
   - Basics of measures
   - Probability measures & densities
 - Lab 2
