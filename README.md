@@ -3,6 +3,15 @@ This repository records the lab work done in the applied statistics course of my
 
 ## Lab sessions
 
-- Lab 1: Basics of measures, probability measures and densities
-- Lab 2: Sampling from distributions and sums of distributions
-- Lab 3: Central limit theorem, weak law of large numbers and maximum likelihood estimation
+- Lab 1:
+  - Basics of measures
+  - Probability measures & densities
+- Lab 2
+  - Sampling from distributions & sums of distributions
+- Lab 3
+  - Central limit theorem
+  - Weak law of large numbers
+  - Maximum likelihood estimation
+- Lab 4
+  - Linear regression
+  - Hypothesis testing (KS test & t-test)
