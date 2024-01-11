@@ -14,7 +14,7 @@ This directory contains any works (mine, unless otherwise mentioned) that expand
 # Understanding the essence of statistics
 **_Also understanding its application in artificial intelligence_**
 <br><br>
-If mathematics is the science of measurement, then statistics is the mathematics of data; it is te science of measuring, i.e. quantifying the different aspects of data, their referents and inferences that may be drawn from them. Data is the main resource in understanding a random process or a seemingly random process, i.e. a process with one or more factors that - for practical or other reasons - cannot be accounted for.
+If mathematics is the science of measurement, then statistics is the mathematics of data; it is te science of measuring, i.e. quantifying different aspects of data as well as the referents and inferences that may be drawn from them. Data is the main resource in understanding a random process or a seemingly random process, i.e. a process with one or more factors that - for practical or other reasons - cannot be accounted for.
 
 ---
 
