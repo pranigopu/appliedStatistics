@@ -1,3 +1,10 @@
+# Expansion
+This directory contains any work (mine, unless otherwise mentioned) that expands on my grasp of applied statistics. This `README` file itself contains the first such work to be added; my own look into the essence of statistics as I understand it. Other contents of this directory so far are:
+
+- [Approximating distributions](expansion/approximatingDistributions.md)
+- [Hypothesis testing](expansion/hypothesisTesting.md)
+
+
 # Understanding the essence of statistics
 **_Also understanding its application in artificial intelligence_**
 <br><br>
