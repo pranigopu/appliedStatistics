@@ -1,4 +1,4 @@
-# Estimators & hypothesis testing
+# Estimators
 
 ## Definitions
 
@@ -41,7 +41,7 @@ Distribution mean function, i.e. a function that inputs a probability measure de
 $Var$<br>
 Distribution variance function, i.e. a function that inputs a probability measure defined on a given set $S$ and outouts the corresponding probability distribution's variance (if it exists).
 
-## Estimators
+## Introduction
 **NOTE**: _Henceforth, "distribution" = "probability distribution" unless specified._
 <br><br>
 An estimator is a collection of maps (_collection, because there is a map for each value of $n \in \mathbb{N}$) $T^n:X^n \rightarrow \mathbb{R}$ which implements some operation on any tuple of $X^n$. The purpose of an estimator is to estimate some real value related to the probability measure on $X$, such as the distribution mean, variance, etc.
