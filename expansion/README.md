@@ -8,6 +8,7 @@ This directory contains any works (mine, unless otherwise mentioned) that expand
   - Basics
   - Exact tests
   - Approximate tests (extends from "Approximating distributions")
+  - Goodness of fit tests
 
 
 # Understanding the essence of statistics
