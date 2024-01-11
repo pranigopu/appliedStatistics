@@ -31,6 +31,8 @@ Given:
 - $\displaystyle +:\mathbb{R} \rightarrow \mathbb{R}, (x_1, x_2 ... x_n) \mapsto \sum_{i=1}^n x_i$
 - $\mathbb{P}$ defined on a set $X \subseteq \mathbb{R}$
 
+We define:
+
 $\mathbb{P} + ... + \mathbb{P}$ ($n$ times) $= +_*(\mathbb{P}^n)$
 
 **NOTE**: We denote:
