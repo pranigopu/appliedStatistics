@@ -104,4 +104,4 @@ We can reformulate the above in less precise terms as:
 
 **NOTE**: " $\approx$ " _here means "approximately the same as"._
 
-The purpose of the above rearrangements and reformulations is to help understand what the central limit theorem means and how it could be used in approximating a sample mean distribution. The first formulation is simply the standard formulation of the law, but by no means the only formulation.
+The purpose of the above rearrangements and reformulations is to help understand what the central limit theorem means and how it could be used in approximating a sample mean distribution. The last three formulations may be less precise, but they show that it is the sample mean distribution that is being estimated, and that can be approximated directly if needed.
