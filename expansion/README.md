@@ -1,4 +1,6 @@
 # Expansion
+
+## About
 This directory contains any works (mine, unless otherwise mentioned) that expand on my grasp of applied statistics. This `README` file itself contains the first such works; my own look into the essence of statistics as I understand it. Other contents of this directory so far are:
 
 - `AD`: [Approximating distributions](https://github.com/pranigopu/appliedStatistics/blob/60da65c6de1fb42cc2ffb0a1dd8523a3429d937f/expansion/approximatingDistributions.md)
@@ -10,8 +12,7 @@ This directory contains any works (mine, unless otherwise mentioned) that expand
   - `HT.AT`: Approximate tests<br>... _extends from_ `AD`
   - `HT:GFT`: Goodness of fit tests<br>... _extends partly from_ `AD.LL`
 
-
-# Understanding the essence of statistics
+## Understanding the essence of statistics
 **_Also understanding its application in artificial intelligence_**
 <br><br>
 If mathematics is the science of measurement, then statistics is the mathematics of data; it is te science of measuring, i.e. quantifying different aspects of data. Data is the main resource in understanding a random process or a seemingly random process, i.e. a process with one or more factors that - for practical or other reasons - cannot be accounted for.
