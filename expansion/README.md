@@ -1,14 +1,14 @@
 # Expansion
 This directory contains any works (mine, unless otherwise mentioned) that expand on my grasp of applied statistics. This `README` file itself contains the first such works; my own look into the essence of statistics as I understand it. Other contents of this directory so far are:
 
-- [Approximating distributions](https://github.com/pranigopu/appliedStatistics/blob/60da65c6de1fb42cc2ffb0a1dd8523a3429d937f/expansion/approximatingDistributions.md)
-  - Estimators
-  - Limit laws
-- [Hypothesis testing](https://github.com/pranigopu/appliedStatistics/blob/256c85409b9308a8b7989c559bf3b01b52f9f1f9/expansion/hypothesisTesting.md)
-  - Introduction
-  - Exact tests
-  - Approximate tests (extends from "Approximating distributions")
-  - Goodness of fit tests
+- `AD`: [Approximating distributions](https://github.com/pranigopu/appliedStatistics/blob/60da65c6de1fb42cc2ffb0a1dd8523a3429d937f/expansion/approximatingDistributions.md)
+  - `AD.E`: Estimators
+  - `AD.LL`: Limit laws
+- `HT`: [Hypothesis testing](https://github.com/pranigopu/appliedStatistics/blob/256c85409b9308a8b7989c559bf3b01b52f9f1f9/expansion/hypothesisTesting.md)
+  - `HT.base`: Introduction
+  - `HT.ET`: Exact tests
+  - `HT.AT`: Approximate tests<br>... _extends from_ `AD`
+  - `HT:GFT`: Goodness of fit tests<br>... _extends partly from_ `AD.LL`
 
 
 # Understanding the essence of statistics
