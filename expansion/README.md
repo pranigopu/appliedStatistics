@@ -2,7 +2,7 @@
 This directory contains any work (mine, unless otherwise mentioned) that expands on my grasp of applied statistics. This `README` file itself contains the first such work to be added; my own look into the essence of statistics as I understand it. Other contents of this directory so far are:
 
 - [Approximating distributions](expansion/approximatingDistributions.md)
-- [Hypothesis testing](expansion/hypothesisTesting.md)
+- [Hypothesis testing](https://github.com/pranigopu/appliedStatistics/blob/256c85409b9308a8b7989c559bf3b01b52f9f1f9/expansion/hypothesisTesting.md))
 
 
 # Understanding the essence of statistics
