@@ -18,7 +18,7 @@ If mathematics is the science of measurement, then statistics is the mathematics
 
 ---
 
-**NOTE**: _A process is identified as a unique process based on common factors in its results, outcomes or samples. Even a so-called "pure" random process is identified as a unique process based on the common factor or set of factors (known or unknown) that lead to a constant probability for any outcome._
+**NOTE**: _A process is identified as a unique process based on common factors underlying its results, outcomes or samples. Even a so-called "pure" random process is identified as a unique process based on the common factor or set of factors (known or unknown) that lead to a constant probability for any outcome._
 
 ---
 
