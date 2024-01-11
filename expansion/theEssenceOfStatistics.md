@@ -2,8 +2,12 @@
 
 If mathematics is the science of measurement, then statistics is the mathematics of data; it is te science of measuring, i.e. quantifying the different aspects of data, their referents and inferences that may be drawn from them. Data is the main resource in understanding a random process or a seemingly random process, i.e. a process with one or more factors that - for practical or other reasons - cannot be accounted for.
 
+---
+
 **NOTE**: _A process is identified as a unique process based on common factors in its results, outcomes or samples. Even a so-called "pure" random process is identified as a unique process based on the common factor or set of factors (known or unknown) that lead to a constant probability for any outcome._
-<br><br>
+
+---
+
 Furthermore, when observingg the distribution of samples from a process as frequencies of occurrence with respect to time, space or some other metrics, observing a convergence in the patterns of occurrence _suggest_ common factors that _may_ be generalised (though not yet, for certain); this is because in a random process, we except the effect of one or more of the unaccounted variables to keep changing across samples, so convergence to a pattern indicates that there are constant, universal factors (universal to all possible samples of the process) that cause these aggregate similarities despite the constant changes (at least in the long-run) in many other factors. We can try to generalise this pattern by omitting deviations from averages over time to arrive at _theoretical distributions_, which are mathematical objects that are essentially abstractions of random-process distributions of a certain kind.
 <br><br>
 However, statistics does not by itself grant any certainty to a process of induction; by its nature, statistics can only indicate promising leads. This is because statistics measure data, but data as such are particulars; to move from conclusions on particulars to conclusions on universals requires _conceptual integration_, i.e. the process of identifying and integrating the concepts and generalisations (i.e. results of inductive reasoning, apart from the one we are engaged in) underlying a process. This is beyond the scope of statistics as such.
