@@ -99,7 +99,7 @@ $\displaystyle \lim_{n \rightarrow \infty} \sqrt{n}(\bar{\mathbb{P}}_n - \mu(\ma
 Rearranging the terms in different ways:
 
 - $\displaystyle \frac{\lim_{n \rightarrow \infty} \sqrt{n}(\bar{\mathbb{P}}_n - \mu(\mathbb{P}))}{Var(\mathbb{P})}((-\infty, t]) = \text{Normal}(0, 1)((-\infty, t])$
-- $\displaystyle \lim_{n \rightarrow \infty} \bar{\mathbb{P}}_n ((-\infty, t]) = \lim_{n \rightarrow \infty} \text{Normal}(\mu(\mathbb{P}), \frac{Var(\mathbb{P})}{n})((-\infty, t])$
+-  $\displaystyle \lim_{n \rightarrow \infty} \bar{\mathbb{P}}_n ((-\infty, t]) = \lim_{n \rightarrow \infty} \text{Normal}(\mu(\mathbb{P}), \frac{Var(\mathbb{P})}{n})((-\infty, t])$
 
 We can reformulate the above three in les precise terms as:
 
