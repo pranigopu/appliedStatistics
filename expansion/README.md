@@ -5,7 +5,7 @@ This directory contains any works (mine, unless otherwise mentioned) that expand
   - Estimators
   - Limit laws
 - [Hypothesis testing](https://github.com/pranigopu/appliedStatistics/blob/256c85409b9308a8b7989c559bf3b01b52f9f1f9/expansion/hypothesisTesting.md)
-  - Basics
+  - Introduction
   - Exact tests
   - Approximate tests (extends from "Approximating distributions")
   - Goodness of fit tests
