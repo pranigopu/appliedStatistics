@@ -107,6 +107,6 @@ We can reformulate the above three as:
 - $\frac{\sqrt{n}(\bar{\mathbb{P}}_n - \mu(\mathbb{P}))}{Var(\mathbb{P})} \approx \text{Normal}(0, 1)$ as $n \rightarrow \infty$
 - $\bar{\mathbb{P}}_n \approx \text{Normal}(\mu(\mathbb{P}), \frac{Var(\mathbb{P})}{n})$ as $n \rightarrow \infty$
 
-**NOTE**: "$\approx$" _here means "approximately the same as"._
+**NOTE**: " $\approx$ " _here means "approximately the same as"._
 
 The purpose of the above rearrangements and reformulations is to help understand what the central limit theorem means and how it could be used in approximating a sample mean distribution. The first formulation is simply the standard formulation of the law, but by no means the only formulation.
