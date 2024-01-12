@@ -11,13 +11,19 @@ The set of all elements in a class of similar elements, i.e. the set of all unit
 - ... entities of a specific kind
 
 #### Random process
-A process with one or more factors that - for practical or other reasons - cannot be accounted for. A random process can be used to generalise the distribution of some metric of a population's individuals as the probability distribution of that metric for a random selection of individuals from the population; here, the random selection is the random process. Thus, a distribution of the population, which may be defined in terms of frequency, density or probability, can be generalised as the probability distribution that serves as the theoretical model for a random process. Hence, when referring the a population distribution, we shall always use the term "theoretical distribution".
+A process with one or more factors that - for practical or other reasons - cannot be accounted for.
 
----
+##### Generalising population distribution with random process
+A random process can be used to generalise the distribution of some metric of a population's individuals as the probability distribution of that metric for a random selection of individuals from the population; here, the random selection is the random process. Thus, a distribution of the population, which may be defined in terms of frequency, density or probability, can be generalised as the probability distribution that serves as the theoretical model for a random process. Hence, when referring the a population distribution, we shall always use the term "theoretical distribution".
 
-**NOTE 1: Maintaining the probability distribution of a random process**:<br>The probability distribution of a random process is maintained for each sample only if each outcome of the process is independent of past outcomes. _Maintaining the probability distribution for each sample is needed when studying this distribution through its samples_.
+**NOTE**: _We generalise the population distribution, not the population itself!_
 
-**NOTE 2: Maintaining the probability distribution of a random selection**:<br>_Note that a random selection is a kind of random process_. Any sequence of $n$ random selections from a population are independent if they are made with replacement (_more on sampling with replacement later_), i.e. if at each selection, each set of metric values have a probability of being observed that stays the same regardless of whether they were observed before.
+##### Mainting probability distribution across samples
+_Henceforth, "distribution" = "probability distribution" unless specified._
+
+**Maintaining the distribution of a random process across samples**:<br>The probability distribution of a random process is maintained across samples, i.e. for each sample only if each outcome of the process is independent of past outcomes. _Maintaining the probability distribution for each sample is needed when studying this distribution through its samples_.
+
+**Maintaining the distribution of a random selection across selections**:<br>_Note that a random selection is a kind of random process_. Any sequence of $n$ random selections from a population are independent if they are made with replacement (_more on sampling with replacement later_), i.e. if at each selection, each set of metric values have a probability of being observed that stays the same regardless of whether they were observed before. Note that practically, for a large enough population with respect to the number of samples taken, the distribution from random sampling without replacement can still be generalised as a distribution from a random process whose distribution is maintained across samples, given the negligible (near-zero) change in the distribution of the metric being studied among the population's individuals even as samples are drawn without replacement.
 
 #### Sample
 A single individual drawn from a population. There are many sampling methods, such as random sampling, selective sampling, systematic sampling, etc. However, we shall see how and why we use random sampling with replacement.
@@ -74,7 +80,7 @@ $Var$<br>
 Distribution variance function, i.e. a function that inputs a probability measure defined on a given set $S$ and outouts the corresponding probability distribution's variance (if it exists).
 
 ## 1. Estimators
-**NOTE**: _Henceforth, "distribution" = "probability distribution" unless specified._
+_Henceforth, "distribution" = "probability distribution" unless specified._
 <br><br>
 An estimator is a collection of maps (collection, because there is a map for each value of $n \in \mathbb{N}$) $T^n:X^n \rightarrow \mathbb{R}$ which implements some operation on any tuple of $X^n$. The purpose of an estimator is to estimate some real value related to the probability measure on $X$, such as the distribution mean, variance, etc.
 <br><br>
