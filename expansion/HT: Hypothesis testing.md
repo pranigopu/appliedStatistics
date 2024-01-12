@@ -6,6 +6,7 @@ The following are defined and explained in the file on [approximating distributi
 - Population and sample
 - Generalising a population's distribution with a random process
 - Generalising random sampling as sampling from a random process
+- Maintaining the distribution of a random process across samples
 
 # 1. Introduction
 Let $T$ be a theoretical distribution which models some random process. Now, consider that we want to either (1) study this distribution through its samples or (2) study the samples with respect to $T$ (for example, to try to find out whether these samples are in fact drawn from $T$). Furthermore, case (1) could be a case wherein we want to either (1) try to (1.1) judge the plausibility of an estimate of a parameter of $T$, given that the parameter is unknown, or (1.2) judge the plausbility of a possible $T$ among a family of distributions (considering we know or assume that the random process is distributed by a distribution from this family). In all these cases, we have:
@@ -19,7 +20,7 @@ Let $T$ be a theoretical distribution which models some random process. Now, con
     - Assumed to be drawn from $T$
     - Not certain to be drawn from $T$
 
-In the case where everything is known, no further work is needed. But in the case where one or more aspects are assumed or unknown or both, we have a reason to test our assumptions and try to discover a relationship between the samples and the theoretical distribution, if one exists. The use of statistical methods to test assumptions about a theoretical distribution or samples with respect to a theoretical distribution is hypothesis testing. Alternatively, we can define hypothesis testing as the use of statistical methods to test assumptions about a theoretical distribution or an observed random process with respect to a theoretical distribution.
+In the case where everything is known, no further work is needed. But in the case where one or more aspects are assumed or unknown or both, we have a reason to test our assumptions and try to discover a relationship between the samples and the theoretical distribution, if one exists. The use of statistical methods to test assumptions about a theoretical distribution or samples with respect to a theoretical distribution is hypothesis testing.
 
 ## 1.1. Test statistic
 To test how plausible the observed value of the test statistic is, we need to have some idea about the probability distribution of the test statistic as such. The essence of hypothesis testing is figuring out (through exact derivations or approximations) the test statistic's probability distribution, then using this distribution to judge the plausibility of an observed value; We ask, in effect, "Given the data and the assumptions/knowledge about the distribution, is the observed value too extreme?"
