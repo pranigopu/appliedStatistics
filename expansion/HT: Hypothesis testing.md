@@ -8,13 +8,13 @@ The following are defined and explained in the file on [approximating distributi
 - Generalising random sampling as sampling from a random process
 
 # 1. Introduction
-Let $T$ be a theoretical distribution which models a given random process. Now, consider that we want to either (1) study this distribution through its samples or (2) study the samples with respect to $T$ (for example, to try to find out whether these samples are in fact drawn from $T$). Furthermore, case (1) could be a case wherein we want to either (1) try to (1.1) judge the plausibility of an estimate of a parameter of $T$, given that the parameter is unknown, or (1.2) judge the plausbility of a possible $T$ among a family of distributions (considering we know or assume that the random process is distributed by a distribution from this family). In all these cases, we have:
+Let $T$ be a theoretical distribution which models some random process. Now, consider that we want to either (1) study this distribution through its samples or (2) study the samples with respect to $T$ (for example, to try to find out whether these samples are in fact drawn from $T$). Furthermore, case (1) could be a case wherein we want to either (1) try to (1.1) judge the plausibility of an estimate of a parameter of $T$, given that the parameter is unknown, or (1.2) judge the plausbility of a possible $T$ among a family of distributions (considering we know or assume that the random process is distributed by a distribution from this family). In all these cases, we have:
 
 - Theoretical distribution $T$, which may be:
     - Known
     - Assumed
     - Unknown (with only its family known or assumed)
-- Samples from a random process, which may be:
+- Samples from a random process (may or may not be modelled by $T$), which may be:
     - Known to be drawn from $T$
     - Assumed to be drawn from $T$
     - Not certain to be drawn from $T$
