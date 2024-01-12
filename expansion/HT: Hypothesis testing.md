@@ -7,8 +7,6 @@ The following are defined and explained in the file on [approximating distributi
 - Generalising a population's distribution with a random process
 - Generalising random sampling as sampling from a random process
 
-Further definitions unique to this file are given below:
-
 # 1. Introduction
 Let $T$ be a theoretical distribution which models a given random process. Now, consider that we want to either (1) study this distribution through its samples or (2) study the samples with respect to $T$ (for example, to try to find out whether these samples are in fact drawn from $T$). Furthermore, case (1) could be a case wherein we want to either (1) try to (1.1) judge the plausibility of an estimate of a parameter of $T$, given that the parameter is unknown, or (1.2) judge the plausbility of a possible $T$ among a family of distributions (considering we know or assume that the random process is distributed by a distribution from this family).
 <br><br>
