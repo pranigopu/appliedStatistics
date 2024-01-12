@@ -4,7 +4,7 @@
 
 ### Population, random process & sample
 #### Population
-The set of all possible elements in a class of similar elements, i.e. the set of all units of a specific kind. This can be the set of all...
+The set of all elements in a class of similar elements, i.e. the set of all units of a specific kind. This can be the set of all...
 
 - ... possible outputs of a random process
 - ... possible outcomes of a random experiment
