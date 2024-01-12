@@ -30,9 +30,7 @@ A single individual drawn from a population. There are many sampling methods, su
 
 #### Random sample
 A single sample, i.e. a single outcome drawn from a random process.
-
----
-
+<br><br>
 **NOTE 1: "Sampling from a distribution"**:<br>If we know or assume the random process follows a specific probability distribution, or alternatively, if we define a random or pseudorandom process that is designed to follow a specific probability distribution, then the sample is said to be drawn from the given distribution.
 
 **NOTE 2: Random sample from a population**:<br>Drawing a random sample from a population is the same as drawing a sample from a random process, wherein the random process here is the random selection from the population. This is another way of expressing random sampling, but this is done to make the phrase "sample from a random process" both generalised and unambiguous. This is done to make the expression of related ideas clear and concise.
