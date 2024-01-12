@@ -18,12 +18,12 @@ A random process can be used to generalise the distribution of some metric of a 
 
 **NOTE**: _We generalise the population distribution, not the population itself!_
 
-##### Mainting probability distribution across samples
+##### Maintaing probability distribution across samples
 _Henceforth, "distribution" = "probability distribution" unless specified._
 
-**Maintaining the distribution of a random process across samples**:<br>The probability distribution of a random process is maintained across samples, i.e. for each sample only if each outcome of the process is independent of past outcomes. _Maintaining the probability distribution for each sample is needed when studying this distribution through its samples_.
+_Maintaining the distribution of a random process across samples_...<br>The probability distribution of a random process is maintained across samples, i.e. for each sample only if each outcome of the process is independent of past outcomes. _Maintaining the probability distribution for each sample is needed when studying this distribution through its samples_.
 
-**Maintaining the distribution of a random selection across selections**:<br>_Note that a random selection is a kind of random process_. Any sequence of $n$ random selections from a population are independent if they are made with replacement (_more on sampling with replacement later_), i.e. if at each selection, each set of metric values have a probability of being observed that stays the same regardless of whether they were observed before. Note that practically, for a large enough population with respect to the number of samples taken, the distribution from random sampling without replacement can still be generalised as a distribution from a random process whose distribution is maintained across samples, given the negligible (near-zero) change in the distribution of the metric being studied among the population's individuals even as samples are drawn without replacement.
+_Maintaining the distribution of a random selection across selections_...<br>_Note that a random selection is a kind of random process_. Any sequence of $n$ random selections from a population are independent if they are made with replacement (_more on sampling with replacement later_), i.e. if at each selection, each set of metric values have a probability of being observed that stays the same regardless of whether they were observed before. Note that practically, for a large enough population with respect to the number of samples taken, the distribution from random sampling without replacement can still be generalised as a distribution from a random process whose distribution is maintained across samples, given the negligible (near-zero) change in the distribution of the metric being studied among the population's individuals even as samples are drawn without replacement.
 
 #### Sample
 A single individual drawn from a population. There are many sampling methods, such as random sampling, selective sampling, systematic sampling, etc. However, we shall see how and why we use random sampling with replacement.
