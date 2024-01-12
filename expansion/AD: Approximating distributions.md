@@ -2,8 +2,34 @@
 
 ## 0. Definitions
 
-### Sample
-A sample is a single outcome drawn from a random process. If we know or assume the random process follows a certain probability distribution, or alternatively, if we define a random or pseudorandom process that is designed to follow a certain probability distribution, then the sample is said to be drawn from the given distribution.
+### Population, random process & sample
+#### Population
+The set of all possible elements in a class of similar elements, i.e. the set of all units of a specific kind. This can be the set of all...
+
+- ... possible outputs of a random process
+- ... possible outcomes of a random experiment
+- ... entities of a specific kind
+
+#### Random process
+A process with one or more factors that - for practical or other reasons - cannot be accounted for. A random process can be used to generalise the distribution of some metric of a population's individuals as the probability distribution of that metric for a random selection of individuals from the population; here, the random selection is the random process. Thus, a distribution of the population, which may be defined in terms of frequency, density or probability, can be generalised as the probability distribution that serves as the theoretical model for a random process. Hence, when referring the a population distribution, we shall always use the term "theoretical distribution".
+
+---
+
+**NOTE 1: Maintaining the probability distribution of a random process**:<br>The probability distribution of a random process is maintained for each sample only if each outcome of the process is independent of past outcomes. _Maintaining the probability distribution for each sample is needed when studying this distribution through its samples_.
+
+**NOTE 2: Maintaining the probability distribution of a random selection**:<br>_Note that a random selection is a kind of random process_. Any sequence of $n$ random selections from a population are independent if they are made with replacement (_more on sampling with replacement later_), i.e. if at each selection, each set of metric values have a probability of being observed that stays the same regardless of whether they were observed before.
+
+#### Sample
+A single individual drawn from a population. There are many sampling methods, such as random sampling, selective sampling, systematic sampling, etc. However, we shall see how and why we use random sampling with replacement.
+
+#### Random sample
+A single sample, i.e. a single outcome drawn from a random process.
+
+---
+
+**NOTE 1: "Sampling from a distribution"**:<br>If we know or assume the random process follows a specific probability distribution, or alternatively, if we define a random or pseudorandom process that is designed to follow a specific probability distribution, then the sample is said to be drawn from the given distribution.
+
+**NOTE 2: Random sample from a population**:<br>Drawing a random sample from a population is the same as drawing a sample from a random process, wherein the random process here is the random selection from the population. This is another way of expressing random sampling, but this is done to make the phrase "sample from a random process" both generalised and unambiguous. This is done to make the expression of related ideas clear and concise.
 
 ### Probability measure
 $\mathbb{P}$ denotes the probability measure, i.e. a measure defined on a given set $S$ that inputs a subset of $S$ and outputs that subset's probability mass such (a value between $0$ and $1$) such that the probability mass of $S$ is $1$.
