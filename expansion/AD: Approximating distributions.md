@@ -162,15 +162,15 @@ In words, given infinite (i.e. _potentially_ limitless) IID samples from a given
 ### 2.2. Central limit theorem
 This is a result about the convergence of the sample mean distribution as a whole to a normal distribution, as the number of samples taken rises. In essence, this result helps approximate the sample mean distribution as a normal distribution, especially when the number of samples taken is very large.
 
-$\displaystyle \lim_{n \rightarrow \infty} \sqrt{n}(\bar{\mathbb{P}}_n - \mu(\mathbb{P}))((-\infty, t]) = \text{Normal}(0, Var(\mathbb{P}))((-\infty, t])$
+$\displaystyle \lim_{n \rightarrow \infty} \sqrt{n}(\bar{\mathbb{P}}_n - \mu(\mathbb{P}))((-\infty, t]) = \text{Normal}(0, \sqrt{Var(\mathbb{P})})((-\infty, t])$
 
 ---
 
 We can reformulate the above in less precise terms as:
 
-- $\sqrt{n}(\bar{\mathbb{P}}_n - \mu(\mathbb{P})) \approx \text{Normal}(0, Var(\mathbb{P}))$ as $n \rightarrow \infty$
+- $\sqrt{n}(\bar{\mathbb{P}}_n - \mu(\mathbb{P})) \approx \text{Normal}(0, \sqrt{Var(\mathbb{P})})$ as $n \rightarrow \infty$
 - $\frac{\sqrt{n}(\bar{\mathbb{P}}_n - \mu(\mathbb{P}))}{Var(\mathbb{P})} \approx \text{Normal}(0, 1)$ as $n \rightarrow \infty$
-- $\bar{\mathbb{P}}_n \approx \text{Normal}(\mu(\mathbb{P}), \frac{Var(\mathbb{P})}{n})$ as $n \rightarrow \infty$
+- $\bar{\mathbb{P}}_n \approx \text{Normal}(\mu(\mathbb{P}), \sqrt{\frac{Var(\mathbb{P})}{n}})$ as $n \rightarrow \infty$
 
 **NOTE**: " $\approx$ " _here means "approximately the same as"._
 
