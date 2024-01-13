@@ -26,7 +26,7 @@ In the case where everything is known, no further work is needed. But in the cas
 
 ## 1.1. Test statistic
 Given a theoretical distribution $T$ (which may be known, assumed or unknown) which is the probability measure $\mathbb{P}$ applied to a given set $X$, a test statistic is an estimator of some parameter of $T$ or a function of an estimator of some parameter of $T$, i.e. it is a collection of maps (collection, because there is a map for each value of $n \in \mathbb{N}$) $T^n:X^n \rightarrow \mathbb{R}$ which implements some operation on any tuple of $X^n$; remember that $X^n = X \times ... \times X$ ($n$ times).
-<br><br>
+<br>
 
 To test how plausible the observed value of the test statistic is, we need to have some idea about the probability distribution of the test statistic itself. The essence of hypothesis testing is figuring out the test statistic's probability distribution (through exact derivations or approximations), then using this distribution to judge the plausibility of an observed value. We ask, in effect, "Given a set of samples as well as the knowledge and assumptions about the samples, the distribution and their relation, is the observed value too extreme?"
 
