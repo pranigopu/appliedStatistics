@@ -2,23 +2,26 @@
 
 ## CONTENTS
 - [0. Definitions](#0-definitions)
-  - [Population, random process \& sample](#population-random-process--sample)
-    - [Population](#population)
-    - [Random process](#random-process)
-      - [Generalising population distribution with random process](#generalising-population-distribution-with-random-process)
-      - [Maintaing probability distribution across samples](#maintaing-probability-distribution-across-samples)
-    - [Sample](#sample)
-    - [Random sample](#random-sample)
-  - [Probability measure](#probability-measure)
-  - [Product measure](#product-measure)
-    - [Product measure of a probability measure](#product-measure-of-a-probability-measure)
-  - [Probability distribution related](#probability-distribution-related)
-    - [Support of a distribution](#support-of-a-distribution)
-    - [Sum of two distributions](#sum-of-two-distributions)
-    - [Distribution parameter functions](#distribution-parameter-functions)
+  - [0.1. Population, random process \& sample](#01-population-random-process--sample)
+    - [0.1.1. Population](#011-population)
+    - [0.1.2. Random process](#012-random-process)
+      - [0.1.2.1. Generalising population distribution with random process](#0121-generalising-population-distribution-with-random-process)
+      - [0.1.2.2. Maintaing probability distribution across samples](#0122-maintaing-probability-distribution-across-samples)
+    - [0.1.3. Sample](#013-sample)
+    - [0.1.4. Random sample](#014-random-sample)
+  - [0.2. Measure related](#02-measure-related)
+    - [0.2.1. Probability measure](#021-probability-measure)
+    - [0.2.2. Product measure](#022-product-measure)
+      - [0.2.2.1. Product measure of a probability measure](#0221-product-measure-of-a-probability-measure)
+  - [0.3. Probability distribution related](#03-probability-distribution-related)
+    - [0.3.1. Support of a distribution](#031-support-of-a-distribution)
+    - [0.3.2. Spread of a distribution](#032-spread-of-a-distribution)
+    - [0.3.3. Sum of two distributions](#033-sum-of-two-distributions)
+    - [0.3.4. Distribution parameter functions](#034-distribution-parameter-functions)
 - [1. Estimators](#1-estimators)
-  - [1.1. Properties of estimators](#11-properties-of-estimators)
-  - [1.2. Some noteworthy estimators](#12-some-noteworthy-estimators)
+  - [1.1. Distribution of an estimator](#11-distribution-of-an-estimator)
+  - [1.2. Properties of estimators](#12-properties-of-estimators)
+  - [1.3. Some noteworthy estimators](#13-some-noteworthy-estimators)
 - [2. Limit laws](#2-limit-laws)
   - [2.1. Laws of large numbers](#21-laws-of-large-numbers)
     - [2.1.1. Weak law of large numbers](#211-weak-law-of-large-numbers)
@@ -27,23 +30,23 @@
 
 ## 0. Definitions
 
-### Population, random process & sample
-#### Population
+### 0.1. Population, random process & sample
+#### 0.1.1. Population
 The set of all elements in a class of similar elements, i.e. the set of all units of a specific kind. This can be the set of all...
 
 - ... possible outputs of a random process
 - ... possible outcomes of a random experiment
 - ... entities of a specific kind
 
-#### Random process
+#### 0.1.2. Random process
 A process with one or more factors that - for practical or other reasons - cannot be accounted for.
 
-##### Generalising population distribution with random process
+##### 0.1.2.1. Generalising population distribution with random process
 A random process can be used to generalise the distribution of some metric of a population's individuals as the probability distribution of that metric for a random selection of individuals from the population; here, the random selection is the random process. Thus, a distribution of the population, which may be defined in terms of frequency, density or probability, can be generalised as the probability distribution that serves as the theoretical model for a random process. Hence, when referring the a population distribution, we shall always use the term "theoretical distribution".
 
 **NOTE**: _We generalise the population distribution, not the population itself!_
 
-##### Maintaing probability distribution across samples
+##### 0.1.2.2. Maintaing probability distribution across samples
 _Henceforth, "distribution" = "probability distribution" unless specified._
 <br><br>
 
@@ -51,20 +54,21 @@ _Maintaining the distribution of a random process across samples_...<br>The prob
 
 _Maintaining the distribution of a random selection across selections_...<br>_Note that a random selection is a kind of random process_. Any sequence of random selections from a population are independent if they are made with replacement (_more on sampling with replacement later_), i.e. if at each selection, each set of metric values have a probability of being observed that stays the same regardless of whether they were observed before. Note that practically, for a large enough population with respect to the number of samples taken, the distribution from random sampling without replacement can still be generalised as a distribution from a random process whose distribution is maintained across samples, given the negligible (near-zero) change in the distribution of the metric being studied among the population's individuals even as samples are drawn without replacement.
 
-#### Sample
+#### 0.1.3. Sample
 A single individual drawn from a population. There are many sampling methods, such as random sampling, selective sampling, systematic sampling, etc. However, we shall see how and why we use random sampling with replacement.
 
-#### Random sample
+#### 0.1.4. Random sample
 A single sample, i.e. a single outcome drawn from a random process.
 <br><br>
 **NOTE 1: "Sampling from a distribution"**:<br>If we know or assume the random process follows a specific probability distribution, or alternatively, if we define a random or pseudorandom process that is designed to follow a specific probability distribution, then the sample is said to be drawn from the given distribution.
 
 **NOTE 2: Random sample from a population**:<br>Drawing a random sample from a population is the same as drawing a sample from a random process, wherein the random process here is the random selection from the population. This is another way of expressing random sampling, but this is done to make the phrase "sample from a random process" both generalised and unambiguous. This is done to make the expression of related ideas clear and concise.
 
-### Probability measure
+### 0.2. Measure related
+#### 0.2.1. Probability measure
 $\mathbb{P}$ denotes the probability measure, i.e. a measure defined on a given set $S$ that inputs a subset of $S$ and outputs that subset's probability mass such (a value between $0$ and $1$) such that the probability mass of $S$ is $1$.
 
-### Product measure
+#### 0.2.2. Product measure
 $M_1 \bigotimes M_2$ denotes the product measure of $M_1$ and $M_2$, given that $M_1$ and $M_2$ are measures defined on sets $X$ and $Y$ respectively. $M_1 \bigotimes M_2$ is the product measure defined on $X \times Y$ such that:
 
 $(M_1 \bigotimes M_2)(A \subseteq X \times Y) = M_1(A)M_2(A)$
@@ -74,14 +78,17 @@ $(M_1 \bigotimes M_2)(A \subseteq X \times Y) = M_1(A)M_2(A)$
 - $X \times ... \times X$ ($n$ times) as $X^n$
 - $M \bigotimes ... \bigotimes M$ ($n$ times) as $M^n$
 
-#### Product measure of a probability measure
+##### 0.2.2.1. Product measure of a probability measure
 A product measure of a probability measure is the product measure of two or more copies of the probability measure, and results in an independent joint probability distribution (_independent means that no component of the joint outcome affects the others_). Hence, $\mathbb{P}^n$ represents the joint distribution of tuples of $n$ independently drawn samples.
 
-### Probability distribution related
-#### Support of a distribution
-The support of a distribution is the set of values for which the mass (for discrete distributions) or density (for continuous distributions) is non-zero. Equivalently, we can define the support of a distribution as the smallest set of values for which the probability mass is $1$.
+### 0.3. Probability distribution related
+#### 0.3.1. Support of a distribution
+The set of values for which the mass (for discrete distributions) or density (for continuous distributions) is non-zero. Equivalently, we can define the support of a distribution as the smallest set of values for which the probability mass is $1$.
 
-#### Sum of two distributions
+#### 0.3.2. Spread of a distribution
+The deviation of distributed values from the distribution mean. This can be measured in many ways, such as variance, standard deviation, mean deviation, interquartile range, etc. Convergence of the spread of a distribution to a specific interval refers to the asymptotic rise with respect to some variable $k$ in the proportion of the mass of the distribution concentrated in the interval. Asymptotic rise in proportion means that the proportion capable of reaching arbitrarily close to $1$, given a large enough $k$.
+
+#### 0.3.3. Sum of two distributions
 Given:
 
 - $\displaystyle +:\mathbb{R} \rightarrow \mathbb{R}, (x_1, x_2 ... x_n) \mapsto \sum_{i=1}^n x_i$
@@ -96,7 +103,7 @@ $\mathbb{P} + ... + \mathbb{P}$ ($n$ times) $= +_*(\mathbb{P}^n)$
 - $\mathbb{P} + ... + \mathbb{P}$ ($n$ times) as $\mathbb{P}_n$
 - $\frac{1}{n}\mathbb{P}_n$ as $\bar{\mathbb{P}}_n$
 
-#### Distribution parameter functions
+#### 0.3.4. Distribution parameter functions
 $\mu$<br>
 Distribution mean function, i.e. a function that inputs a probability measure defined on a given set $S$ and outputs the corresponding probability distribution's mean (if it exists).
 
@@ -121,7 +128,7 @@ These properties support the purpose of estimators; an estimator without one or 
 1. **Unbiasedness**<br>$\mu({T^n}_*\mathbb{P}^n) = \phi(\mathbb{P})$
 2. **Consistency**<br>$\displaystyle \lim_{n \rightarrow \infty} T^n_*\mathbb{P}^n([\phi(\mathbb{P}) - \epsilon, \phi(\mathbb{P}) + \epsilon]) = 1, \forall \epsilon > 0$
 
-In words, unbiasedness implies that the mean of the distribution of the estimator values equals to the parameter to be estimated. Consistency implies that as the number of samples taken rises, the support of the distribution of estimator values converges to an arbitrarily small neighbourhood around the parameter to be estimated.
+In words, unbiasedness implies that the mean of the distribution of the estimator values equals to the parameter to be estimated. Consistency implies that as the number of samples taken rises, the mass of the distribution of estimator values converges to an arbitrarily small neighbourhood around the parameter to be estimated.
 
 ### 1.3. Some noteworthy estimators
 
@@ -138,19 +145,19 @@ The sample mean distribution is such that....
 Limit laws are results about the convergence of the sample mean distribution as the number of samples taken increases. Why does this matter? The distribution over which we take sample means may be any distribution, including the distribution of an estimator values. Since the essence of estimation is averaging, it helps to know how averages behave as the number of samples taken increases. Note that, as with estimators, all limit laws presuppose that (1) samples are drawn independently and (2) samples are drawn from the same distribution. In other words, we only deal with independently and identically distributed (IID) samples.
 
 ### 2.1. Laws of large numbers
-These laws are results about the convergence of the support of the sample mean distribution.
+These laws are results about the convergence of spread in the sample mean distribution.
 
 #### 2.1.1. Weak law of large numbers
 $\displaystyle \lim_{n \rightarrow \infty} \bar{\mathbb{P}}_n([\mu(\mathbb{P}) - \epsilon, \mu(\mathbb{P}) + \epsilon]) = 1, \forall \epsilon > 0$
 
-In words, as the number of samples taken $n$ taken from a given distribution increases, the support of the sample mean distributions converges to an arbitrarily small interval around the given distribution's mean. In other words, averaging over larger numbers of samples leads to more precise estimates.
+In words, as the number of samples taken $n$ taken from a given distribution increases, the spread of the sample mean distributions converges to an arbitrarily small interval around the given distribution's mean. In other words, averaging over larger numbers of samples leads to more precise estimates.
 
 #### 2.1.2. Strong law of large numbers
 $\displaystyle \mathbb{P}^{\infty}(\{(x_1, x_2 ...) | \lim_{n \rightarrow \infty}\frac{1}{n}\sum_{i=1}^n x_i = \mu(\mathbb{P})\}) = 1$
 
 **NOTE**: $\mathbb{P}^{\infty} = \mathbb{P} \bigotimes \mathbb{P} \bigotimes ...$
 
-In words, given infinite (i.e. _potentially_ limitless) IID samples from a given distribution, it is certain that sample means of any number of these samples taken converges to the given distribution's mean as the number of these samples taken rises. Another way to word the law is to say that the support of the joint distribution of infinite (i.e. _potentially_ limitless) IID samples from a given distribution is exactly the set of all values whose subsets' sample means converge to the given distribution's mean as the subsets' size rises. This implies that sample mean of any sequence of IID samples will converge to the given distribution's mean as more IID samples are added to the sequence.
+In words, given infinite (i.e. _potentially_ limitless) IID samples from a given distribution, it is certain that sample means of any number of these samples taken converges to the given distribution's mean as the number of these samples taken rises. Another way to word the law is to say that the spread of the joint distribution of infinite (i.e. _potentially_ limitless) IID samples from a given distribution is exactly the set of all values whose subsets' sample means converge to the given distribution's mean as the subsets' size rises. This implies that sample mean of any sequence of IID samples will converge to the given distribution's mean as more IID samples are added to the sequence.
 
 ### 2.2. Central limit theorem
 This is a result about the convergence of the sample mean distribution as a whole to a normal distribution, as the number of samples taken rises. In essence, this result helps approximate the sample mean distribution as a normal distribution, especially when the number of samples taken is very large.
