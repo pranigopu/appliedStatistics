@@ -74,4 +74,4 @@ The parts of the distribution that make up the critical region depend on (1) the
 
 **NOTE: Effect of one or two sidedness on** $p$**-value**: 
 
-Given that $F$ is the cumulative probability distribution of the test statistic and given an observed value $x$, for one-tailed test, $p = \min(1-F(x), F(x))$, whereas for _symmetric_ two-tailed test, $p = 2\min(1-F(x), F(x))$. To understand why, consider what values would be considered "at least as extreme" as the observed value.
+Given that $F$ is the cumulative probability distribution of the test statistic and given an observed value $x$, for a one-tailed test, $p = \min(1-F(x), F(x))$, whereas for a two-tailed test, $p = 2\min(1-F(x), F(x))$. To understand why, consider what values would be considered "at least as extreme" as the observed value.
