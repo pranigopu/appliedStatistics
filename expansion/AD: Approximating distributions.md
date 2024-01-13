@@ -2,28 +2,28 @@
 
 ## CONTENTS
 - [0. Definitions](#0-definitions)
-    - [Population, random process \& sample](#population-random-process--sample)
-        - [Population](#population)
-        - [Random process](#random-process)
-        - [Generalising population distribution with random process](#generalising-population-distribution-with-random-process)
-        - [Maintaing probability distribution across samples](#maintaing-probability-distribution-across-samples)
-        - [Sample](#sample)
-        - [Random sample](#random-sample)
-    - [Probability measure](#probability-measure)
-    - [Product measure](#product-measure)
-        - [Product measure of a probability measure](#product-measure-of-a-probability-measure)
-    - [Probability distribution related](#probability-distribution-related)
-        - [Support of a distribution](#support-of-a-distribution)
-        - [Sum of two distributions](#sum-of-two-distributions)
-        - [Distribution parameter functions](#distribution-parameter-functions)
+  - [Population, random process \& sample](#population-random-process--sample)
+    - [Population](#population)
+    - [Random process](#random-process)
+      - [Generalising population distribution with random process](#generalising-population-distribution-with-random-process)
+      - [Maintaing probability distribution across samples](#maintaing-probability-distribution-across-samples)
+    - [Sample](#sample)
+    - [Random sample](#random-sample)
+  - [Probability measure](#probability-measure)
+  - [Product measure](#product-measure)
+    - [Product measure of a probability measure](#product-measure-of-a-probability-measure)
+  - [Probability distribution related](#probability-distribution-related)
+    - [Support of a distribution](#support-of-a-distribution)
+    - [Sum of two distributions](#sum-of-two-distributions)
+    - [Distribution parameter functions](#distribution-parameter-functions)
 - [1. Estimators](#1-estimators)
-- [1.1. Properties of estimators](#11-properties-of-estimators)
-- [1.2. Some noteworthy estimators](#12-some-noteworthy-estimators)
+  - [1.1. Properties of estimators](#11-properties-of-estimators)
+  - [1.2. Some noteworthy estimators](#12-some-noteworthy-estimators)
 - [2. Limit laws](#2-limit-laws)
-- [2.1. Laws of large numbers](#21-laws-of-large-numbers)
+  - [2.1. Laws of large numbers](#21-laws-of-large-numbers)
     - [2.1.1. Weak law of large numbers](#211-weak-law-of-large-numbers)
     - [2.1.2. Strong law of large numbers](#212-strong-law-of-large-numbers)
-- [2.2. Central limit theorem](#22-central-limit-theorem)
+  - [2.2. Central limit theorem](#22-central-limit-theorem)
 
 ## 0. Definitions
 
@@ -45,6 +45,7 @@ A random process can be used to generalise the distribution of some metric of a 
 
 ##### Maintaing probability distribution across samples
 _Henceforth, "distribution" = "probability distribution" unless specified._
+<br><br>
 
 _Maintaining the distribution of a random process across samples_...<br>The probability distribution of a random process is maintained across samples, i.e. for each sample only if each outcome of the process is independent of past outcomes. Maintaining the probability distribution for each sample is needed when studying this distribution through its samples.
 
@@ -109,17 +110,20 @@ _Henceforth, "distribution" = "probability distribution" unless specified._
 An estimator is a collection of maps (collection, because there is a map for each value of $n \in \mathbb{N}$) $T^n:X^n \rightarrow \mathbb{R}$ which implements some operation on any tuple of $X^n$. The purpose of an estimator is to estimate some real value related to the probability measure on $X$, such as the distribution mean, variance, etc.
 <br><br>
 
-**NOTE: Independent and identically distributed samples as a prerequisite for estimation**:<br>The essence of estimation is averaging; we average over many samples from a distribution to get an idea about the distribution itself. To do this, we must first ensure a lack of dependence between consequent samples, since such dependence changes the distribution of consequent samples. Furthermore, since estimation depends on averaging samples from the same distribution, we need to ensure the samples are drawn from the same distribution, i.e. we need to ensure the samples are identically distributed.
+**NOTE: Independent and identically distributed (IID) samples as a prerequisite for estimation**:<br>The essence of estimation is averaging; we average over many samples from a distribution to get an idea about the distribution itself. To do this, we must first ensure a lack of dependence between consequent samples, since such dependence changes the distribution of consequent samples. Furthermore, since estimation depends on averaging samples from the same distribution, we need to ensure the samples are drawn from the same distribution, i.e. we need to ensure the samples are identically distributed.
 
-### 1.1. Properties of estimators
+### 1.1. Distribution of an estimator
+Given a theoretical distribution represented by the probability measure $\mathbb{P}$ applied to a given set $X$, and given an estimator $T^n:X^n \rightarrow \mathbb{R}$ (for all $n$) which estimates some parameter of $\mathbb{P}$, the distribution the estimator is essentially the pushforward measure of $\mathbb{P}^n$ through $T^n$, i.e. $T^n_*\mathbb{P}^n$. This can be understood as the distribution of the results of applying a function $T^n$ to $n$ samples each drawn from $\mathbb{P}$.
+
+### 1.2. Properties of estimators
 These properties support the purpose of estimators; an estimator without one or both of these properties cannot be used for an accurate estimation of distribution parameters. Now, given we have an estimator $T^n$ meant to estimate the parameter $\phi(\mathbb{P})$ of the distribution corresponding to $\mathbb{P}$...
 
 1. **Unbiasedness**<br>$\mu({T^n}_*\mathbb{P}^n) = \phi(\mathbb{P})$
-2. **Consistency**<br>$\displaystyle \lim_{n \rightarrow \infty} {T^n}_*\mathbb{P}^n([\phi(\mathbb{P}) - \epsilon, \phi(\mathbb{P}) + \epsilon]) = 1, \forall \epsilon > 0$
+2. **Consistency**<br>$\displaystyle \lim_{n \rightarrow \infty} T^n_*\mathbb{P}^n([\phi(\mathbb{P}) - \epsilon, \phi(\mathbb{P}) + \epsilon]) = 1, \forall \epsilon > 0$
 
 In words, unbiasedness implies that the mean of the distribution of the estimator values equals to the parameter to be estimated. Consistency implies that as the number of samples taken rises, the distribution of estimator values converges to an arbitrarily small neighbourhood around the parameter to be estimated.
 
-### 1.2. Some noteworthy estimators
+### 1.3. Some noteworthy estimators
 
 1. Sample mean, distributed by $\bar{\mathbb{P}}_n$
 2. Sample variance, distributed by $\frac{1}{n}(\mathbb{(P-\mu(\mathbb{P})}^n)$
