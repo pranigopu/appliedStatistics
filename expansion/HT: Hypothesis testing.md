@@ -45,19 +45,19 @@ A test statistic is an estimator or a function of an estimator of a hypothesised
 ### 1.2.3. Conditions to reject $H_0$
 How do we make conclusions, given $H_0$? In essence, we reject $H_0$ if our observation is _deemed_ to be _sufficiently unlikely_. What does this mean?
 
-#### Defining "sufficiently unlikely"
+#### 1.2.3.1. Defining "sufficiently unlikely"
 We pick a parameter $\alpha \in (0, 1)$, the **confidence level**. This is a proportion of the most likely (i.e. highest probability) values of the test statistic's distribution. Since the proportion is that of a probability distribution, $\alpha$ is also the probability mass (i.e. combined probability) of the $100 \times \alpha \%$ most likely values of the test statistic. For example, if $\alpha = 0.95$, then it refers to the probability mass of the $95 \%$ most likely values of the test statistic.
 <br><br>
 
 The smallest interval containing these values is called the **confidence interval**. Using the confidence interval, we can define what we mean by "sufficiently unlikely"; if an observed value of the test statistic lies outside the confidence interval, i.e. outside the range of the $100 \times \alpha \%$ most likely values of the test statistic, the observed value is deemed "sufficiently unlikely". Usually, $\alpha$ is chosen as $0.95, 0.99, 0.999,$ etc.
 
-#### Critical region
+#### 1.2.3.2. Critical region
 This concept is directly derived from the confidence interval. The critical region is the part of the test statistic's distribution apart from the confidence interval, i.e. the part of the test statistic's distribution containing the $100 \times (1 - \alpha) \%$ least likely values of the test statistic. The probability mass of these values, i.e. $1 - \alpha$, is called the **significance level**. Hence, if an observed value of the test statistic lies within the critical region, it is deemed "sufficiently unlikely".
 
-#### $p$-value
+#### 1.2.3.3. $p$-value
 This is an alternative to the critical region to test the plausibility of an observation, and is a concept that is logically and practically equivalent. The $p$-value is the probability mass of all the values of the test statistic that are at least as extreme (i.e. at least as unlikely) as the observed value. If this probability mass is less than the significance level $1 - \alpha$, then we know that the observed value lies in the critical region and is hence deemed "sufficiently unlikely".
 
-#### "One-sided" vs. "two-sided" tests
+#### 1.2.3.4. "One-sided" vs. "two-sided" tests
 _Also called "one-tailed" and "two-tailed"_
 
 **NOTE: Meaning of "side of a distribution"**:<br>Given a point $t \in \mathbb{R}$ on the real line:
@@ -74,4 +74,4 @@ The parts of the distribution that make up the critical region depend on (1) the
 
 **NOTE: Effect of one or two sidedness on** $p$**-value**: 
 
-Given that $F$ is the cumulative probability distribution of the test statistic and given an observed value $x$, for a one-tailed test, $p = \min(1-F(x), F(x))$, whereas for a two-tailed test, $p = 2\min(1-F(x), F(x))$. To understand why, consider what values would be considered "at least as extreme" as the observed value.
+Given that $F$ is the cumulative probability distribution of the test statistic and given an observed value $x$, for a one-sided test, $p = \min(1-F(x), F(x))$ (more specficially, $1-F(x)$ for right-sided test, $F(x)$ for left-sided test), whereas for a two-sided test, $p = 2\min(1-F(x), F(x))$. To understand why, consider what values would be considered "at least as extreme" as the observed value.
