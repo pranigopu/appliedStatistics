@@ -43,7 +43,7 @@ In every case, $H_0$ is the hypothesis, either implicitly or explicitly, that th
 A test statistic is an estimator or a function of an estimator of a hypothesised theoretical distribution, hence, its assumed or approximated distribution is derived from the hypothesised one. Hence, tbe able to judge the plausibility of a test statistic's value with respect to a hypothesised theoretical distribution, we have to assume the test statistic's distribution is derived from the hypothesised one. Hence, when we test the plausibility of a test statistic's value, it is always under the assumption that $H_0$ holds, i.e. under the assumption that the null hypothesis is true.
 
 ### 1.2.3. Conditions to reject $H_0$
-How do we make conclusions, given $H_0$? In essence, we reject $H_0$ if our observation is _deemed_ to be _sufficiently unlikely_. What does this mean?
+In essence, we reject $H_0$ if our observation is _deemed_ to be _sufficiently unlikely_.
 
 #### 1.2.3.1. Defining "sufficiently unlikely"
 We pick a parameter $\alpha \in (0, 1)$, the **confidence level**. This is a proportion of the most likely (i.e. highest probability) values of the test statistic's distribution. Since the proportion is that of a probability distribution, $\alpha$ is also the probability mass (i.e. combined probability) of the $(100 \times \alpha)$% most likely values of the test statistic. For example, if $\alpha = 0.95$, then it refers to the probability mass of the $95$% most likely values of the test statistic.
