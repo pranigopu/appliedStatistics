@@ -27,6 +27,7 @@ In the case where everything is known, no further work is needed. But in the cas
 ## 1.1. Test statistic
 Given a theoretical distribution $T$ (which may be known, assumed or unknown) which is the probability measure $\mathbb{P}$ applied to a given set $X$, a test statistic is an estimator of some parameter of $T$ or a function of an estimator of some parameter of $T$, i.e. it is a collection of maps (collection, because there is a map for each value of $n \in \mathbb{N}$) $T^n:X^n \rightarrow \mathbb{R}$ which implements some operation on any tuple of $X^n$; remember that $X^n = X \times ... \times X$ ($n$ times).
 <br><br>
+
 To test how plausible the observed value of the test statistic is, we need to have some idea about the probability distribution of the test statistic itself. The essence of hypothesis testing is figuring out the test statistic's probability distribution (through exact derivations or approximations), then using this distribution to judge the plausibility of an observed value. We ask, in effect, "Given a set of samples as well as the knowledge and assumptions about the samples, the distribution and their relation, is the observed value too extreme?"
 
 ## 1.2. Formulating a hypothesis & a test
@@ -47,6 +48,7 @@ How do we make conclusions, given $H_0$? In essence, we reject $H_0$ if our obse
 #### Defining "sufficiently unlikely"
 We pick a parameter $\alpha \in (0, 1)$, the **confidence level**. This is a proportion of the most likely (i.e. highest probability) values of the test statistic's distribution. Since the proportion is that of a probability distribution, $\alpha$ is also the probability mass (i.e. combined probability) of the $100 \times \alpha \%$ most likely values of the test statistic. For example, if $\alpha = 0.95$, then it refers to the probability mass of the $95 \%$ most likely values of the test statistic.
 <br><br>
+
 The smallest interval containing these values is called the **confidence interval**. Using the confidence interval, we can define what we mean by "sufficiently unlikely"; if an observed value of the test statistic lies outside the confidence interval, i.e. outside the range of the $100 \times \alpha \%$ most likely values of the test statistic, the observed value is deemed "sufficiently unlikely". Usually, $\alpha$ is chosen as $0.95, 0.99, 0.999,$ etc.
 
 #### Critical region
@@ -66,6 +68,10 @@ _Also called "one-tailed" and "two-tailed"_
 <br>
 Depending on the type of distribution, the critical region, i.e. the $1-\alpha$ proportion of least likely (i.e. most extreme) values may lie on either only one side of the distribution, or on both sides of the distribution.
 <br><br>
+
 The parts of the distribution that make up the critical region depend on (1) the shape of the distribution (extent of skewness, concentration of values, etc.) and (2) the confidence level considered. For example, for any symmetric distribution, extreme values lie in equal proportions on both sides, leading to the critical region being equally divided on either side of the distribution. As another example, if the confidence level is low enough, an asymmetric distribution's critical region may lie on both sides of the mean (unequally divided), though for a high enough confidence level, an asymmetric distribution's critical region always lies on only one side of the distribution.
 <br><br>
-**NOTE: Effect of one or two sidedness on** $p$**-value**:<br>Given that $F$ is the cumulative probability distribution of the test statistic and given an observed value $x$, for one-tailed test, $p = \min(1-F(x), F(x))$, whereas for _symmetric_ two-tailed test, $p = 2\min(1-F(x), F(x))$. To understand why, consider what values would be considered "at least as extreme" as the observed value.
+
+**NOTE: Effect of one or two sidedness on** $p$**-value**: 
+
+Given that $F$ is the cumulative probability distribution of the test statistic and given an observed value $x$, for one-tailed test, $p = \min(1-F(x), F(x))$, whereas for _symmetric_ two-tailed test, $p = 2\min(1-F(x), F(x))$. To understand why, consider what values would be considered "at least as extreme" as the observed value.
