@@ -66,6 +66,7 @@ _Also called "one-tailed" and "two-tailed"_
 - "Right side" is the part of the distribution in $[t, \infty)$
 
 <br>
+
 Depending on the type of distribution, the critical region, i.e. the $1-\alpha$ proportion of least likely (i.e. most extreme) values may lie on either only one side of the distribution, or on both sides of the distribution.
 <br><br>
 
