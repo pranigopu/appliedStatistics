@@ -121,7 +121,7 @@ These properties support the purpose of estimators; an estimator without one or 
 1. **Unbiasedness**<br>$\mu({T^n}_*\mathbb{P}^n) = \phi(\mathbb{P})$
 2. **Consistency**<br>$\displaystyle \lim_{n \rightarrow \infty} T^n_*\mathbb{P}^n([\phi(\mathbb{P}) - \epsilon, \phi(\mathbb{P}) + \epsilon]) = 1, \forall \epsilon > 0$
 
-In words, unbiasedness implies that the mean of the distribution of the estimator values equals to the parameter to be estimated. Consistency implies that as the number of samples taken rises, the distribution of estimator values converges to an arbitrarily small neighbourhood around the parameter to be estimated.
+In words, unbiasedness implies that the mean of the distribution of the estimator values equals to the parameter to be estimated. Consistency implies that as the number of samples taken rises, the support of the distribution of estimator values converges to an arbitrarily small neighbourhood around the parameter to be estimated.
 
 ### 1.3. Some noteworthy estimators
 
