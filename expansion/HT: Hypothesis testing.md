@@ -67,5 +67,6 @@ _Also called "one-tailed" and "two-tailed"_
 Depending on the type of distribution, the critical region, i.e. the $1-\alpha$ proportion of least likely (i.e. most extreme) values may lie on either only one side of the distribution, or on both sides of the distribution.
 <br><br>
 The parts of the distribution that make up the critical region depend on (1) the shape of the distribution (extent of skewness, concentration of values, etc.) and (2) the confidence level considered. For example, for any symmetric distribution, extreme values lie in equal proportions on both sides, leading to the critical region being equally divided on either side of the distribution. As another example, if the confidence level is low enough, an asymmetric distribution's critical region may lie on both sides of the mean (unequally divided), though for a high enough confidence level, an asymmetric distribution's critical region always lies on only one side of the distribution.
+<br><br>
 
 **NOTE: Effect of one or two sidedness on** $p$**-value**:<br>Given that $F$ is the cumulative probability distribution of the test statistic and given an observed value $x$, for one-tailed test, $p = \min(1-F(x), F(x))$, whereas for two-tailed test, $p = 2\min(1-F(x), F(x))$.
