@@ -60,7 +60,7 @@ This is an alternative to the critical region to test the plausibility of an obs
 #### 1.2.3.4. "One-sided" vs. "two-sided" tests
 _Also called "one-tailed" and "two-tailed"_
 
-**NOTE: Meaning of "side of a distribution"**:<br>Given a point $t \in \mathbb{R}$ on the real line:
+**NOTE: Meaning of "side of a distribution"**:<br>Given a suitable point $t \in \mathbb{R}$ on the real line:
 
 - "Left side" is the part of the distribution in $(-\infty, t]$
 - "Right side" is the part of the distribution in $[t, \infty)$
