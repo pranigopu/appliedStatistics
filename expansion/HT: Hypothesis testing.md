@@ -11,16 +11,16 @@ The following are defined and explained in the file on [approximating distributi
 _Henceforth, "distribution" = "probability distribution" unless specified._
 
 # 1. Introduction
-Let $T$ be a theoretical distribution which models some random process. Now, consider that we want to either (1) study this distribution through its samples or (2) study the samples with respect to $T$ (for example, to try to find out whether these samples are in fact drawn from $T$). Furthermore, case (1) could be a case wherein we want to either (1) try to (1.1) judge the plausibility of an estimate of a parameter of $T$, given that the parameter is unknown, or (1.2) judge the plausbility of a possible $T$ among a family of distributions (considering we know or assume that the random process is distributed by a distribution from this family). In all these cases, we have:
+Let $D$ be a theoretical distribution which models some random process. Now, consider that we want to either (1) study this distribution through its samples or (2) study the samples with respect to $D$ (for example, to try to find out whether these samples are in fact drawn from $D$). Furthermore, case (1) could be a case wherein we want to either (1) try to (1.1) judge the plausibility of an estimate of a parameter of $D$, given that the parameter is unknown, or (1.2) judge the plausbility of a possible $D$ among a family of distributions (considering we know or assume that the random process is distributed by a distribution from this family). In all these cases, we have:
 
-- Theoretical distribution $T$, which may be:
+- Theoretical distribution $D$, which may be:
     - Known
     - Assumed
     - Unknown (with only its family known or assumed)
-- Samples from a random process (may or may not be modelled by $T$), which may be:
-    - Known to be drawn from $T$
-    - Assumed to be drawn from $T$
-    - Not certain to be drawn from $T$
+- Samples from a random process (may or may not be modelled by $D$), which may be:
+    - Known to be drawn from $D$
+    - Assumed to be drawn from $D$
+    - Not certain to be drawn from $D$
 
 In the case where everything is known, no further work is needed. But in the case where one or more aspects are assumed or unknown or both, we have a reason to test our assumptions and try to discover a relationship between the samples and the theoretical distribution, if one exists. The use of statistical methods to test assumptions about a theoretical distribution with respect to samples or about samples with respect to a theoretical distribution is hypothesis testing. Alternatively, instead of referring to samples we can refer to "observed random process"; hypothesis testing, then, is the use of statistical methods to test assumptions about the relation between the distribution of an observed random process and a theoretical distribution modelling some random process (which may or may not be the observed random process).
 
