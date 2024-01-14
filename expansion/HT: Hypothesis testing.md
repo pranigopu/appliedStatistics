@@ -11,7 +11,7 @@ The following are defined and explained in the file on [approximating distributi
 _Henceforth, "distribution" = "probability distribution" unless specified._
 
 # 1. Introduction
-Let $D$ be a theoretical distribution which models some random process. Now, consider that we want to either (1) study this distribution through its samples or (2) study the samples with respect to $D$ (for example, to try to find out whether these samples are in fact drawn from $D$). Furthermore, case (1) could be a case wherein we want to either (1) try to (1.1) judge the plausibility of an estimate of a parameter of $D$, given that the parameter is unknown, or (1.2) judge the plausbility of a possible $D$ among a family of distributions (considering we know or assume that the random process is distributed by a distribution from this family). In all these cases, we have:
+Let $D$ be a theoretical distribution which models some random process. Now, consider that we want to either (1) study this distribution through its samples or (2) study the samples with respect to $D$ (for example, to try to find out whether these samples are in fact drawn from $D$). Furthermore, case (1) could be a case wherein we want to either try to (1.1) judge the plausibility of an estimate of a parameter of $D$, given that the parameter is unknown, or (1.2) judge the plausbility of a possible $D$ among a family of distributions (considering we know or assume that the random process is distributed by a distribution from this family). In all these cases, we have:
 
 - Theoretical distribution $D$, which may be:
     - Known
