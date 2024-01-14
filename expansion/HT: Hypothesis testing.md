@@ -72,4 +72,4 @@ Depending on the type of distribution, the critical region, i.e. the $1-\alpha$ 
 
 **NOTE: Effect of one or two sidedness on** $p$**-value**: 
 
-Given that $F$ is the cumulative probability distribution of the test statistic and given an observed value $x$, for a one-sided test, $p = \min(1-F(x), F(x))$ (more specficially, $1-F(x)$ for right-sided test, $F(x)$ for left-sided test), whereas for a two-sided test, $p = 2\min(1-F(x), F(x))$. To understand why, consider what intervals of values would be considered "at least as extreme" as the observed value.
+Given that $F$ is the cumulative probability distribution of the test statistic and given an observed value $x$, for a one-sided test, $p = \min(1-F(x), F(x))$ (more specficially, $1-F(x)$ for right-sided test, $F(x)$ for left-sided test), whereas for a two-sided test, $p = 2\min(1-F(x), F(x))$. To see why, consider what intervals of values would be considered "at least as extreme" as the observed value.
