@@ -1,7 +1,7 @@
 # Lab 3
 
 ## Corrections of questions
-In question 1, the following is stated:
+In theory question 1, the following is stated:
 
 $\chi^2(k_1) + \chi^2(k_2) = \chi^2(k_1 + \chi_2)$
 
