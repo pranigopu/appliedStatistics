@@ -2,22 +2,22 @@
 
 ## CONTENTS
 - [0. Definitions](#0-definitions)
-  - [0.1. Population, random process \& sample](#01-population-random-process--sample)
+  - [0.1. Population, random process, sample \& sample space](#01-population-random-process-sample--sample-space)
     - [0.1.1. Population](#011-population)
     - [0.1.2. Random process](#012-random-process)
       - [0.1.2.1. Generalising population distribution with random process](#0121-generalising-population-distribution-with-random-process)
       - [0.1.2.2. Maintaing probability distribution across samples](#0122-maintaing-probability-distribution-across-samples)
     - [0.1.3. Sample](#013-sample)
     - [0.1.4. Random sample](#014-random-sample)
-  - [0.2. Measure-related](#02-measure-related)
-    - [0.2.1. Probability measure](#021-probability-measure)
-    - [0.2.2. Product measure](#022-product-measure)
-      - [0.2.2.1. Product measure of a probability measure](#0221-product-measure-of-a-probability-measure)
-  - [0.3. Distribution-related](#03-distribution-related)
+    - [0.1.5. Sample space](#015-sample-space)
+  - [0.2. Product measure](#02-product-measure)
+    - [0.2.1. Product measure of a probability measure](#021-product-measure-of-a-probability-measure)
+  - [0.3. Definitions related to distributions](#03-definitions-related-to-distributions)
     - [0.3.1. Support of a distribution](#031-support-of-a-distribution)
     - [0.3.2. Spread of a distribution](#032-spread-of-a-distribution)
     - [0.3.3. Sum of two distributions](#033-sum-of-two-distributions)
     - [0.3.4. Distribution parameter functions](#034-distribution-parameter-functions)
+    - [0.3.5. "Drawing from a distribution"](#035-drawing-from-a-distribution)
 - [1. Estimators](#1-estimators)
   - [1.1. Distribution of an estimator](#11-distribution-of-an-estimator)
   - [1.2. Properties of estimators](#12-properties-of-estimators)
@@ -30,7 +30,7 @@
 
 ## 0. Definitions
 
-### 0.1. Population, random process & sample
+### 0.1. Population, random process, sample & sample space
 #### 0.1.1. Population
 The set of all elements in a class of similar elements, i.e. the set of all units of a specific kind. This can be the set of all...
 
@@ -64,11 +64,10 @@ A single sample, i.e. a single outcome drawn from a random process.
 
 **NOTE 2: Random sample from a population**:<br>Drawing a random sample from a population is the same as drawing a sample from a random process, wherein the random process here is the random selection from the population. This is another way of expressing random sampling, but this is done to make the phrase "sample from a random process" both generalised and unambiguous. This is done to make the expression of related ideas clear and concise.
 
-### 0.2. Measure-related
-#### 0.2.1. Probability measure
-$\mathbb{P}$ denotes the probability measure, i.e. a measure defined on a given set $S$ that inputs a subset of $S$ and outputs that subset's probability mass such (a value between $0$ and $1$) such that the probability mass of $S$ is $1$.
+#### 0.1.5. Sample space
+The sample space of a random process is the set of all possible outcomes of the random process.
 
-#### 0.2.2. Product measure
+### 0.2. Product measure
 $M_1 \bigotimes M_2$ denotes the product measure of $M_1$ and $M_2$, given that $M_1$ and $M_2$ are measures defined on sets $X$ and $Y$ respectively. $M_1 \bigotimes M_2$ is the product measure defined on $X \times Y$ such that:
 
 $(M_1 \bigotimes M_2)(A \subseteq X \times Y) = M_1(A)M_2(A)$
@@ -78,10 +77,10 @@ $(M_1 \bigotimes M_2)(A \subseteq X \times Y) = M_1(A)M_2(A)$
 - $X \times ... \times X$ ($n$ times) as $X^n$
 - $M \bigotimes ... \bigotimes M$ ($n$ times) as $M^n$
 
-##### 0.2.2.1. Product measure of a probability measure
-A product measure of a probability measure is the product measure of two or more copies of the probability measure, and results in an independent joint probability distribution (_independent means that no component of the joint outcome affects the others_). Hence, $\mathbb{P}^n$ represents the joint distribution of tuples of $n$ independently drawn samples.
+#### 0.2.1. Product measure of a probability measure
+A product measure of a probability measure is the product measure of two or more copies of the probability measure, and results in an independent joint probability distribution (_independent means that no component of the joint outcome affects the others_); this represents the joint distribution of tuples of $n$ independently drawn samples.
 
-### 0.3. Distribution-related
+### 0.3. Definitions related to distributions
 #### 0.3.1. Support of a distribution
 The set of values for which the mass (for discrete distributions) or density (for continuous distributions) is non-zero. Furthermore, we can define the support of a probability distribution as the smallest set of values for which the probability mass is $1$.
 
@@ -110,6 +109,9 @@ Distribution mean function, i.e. a function that inputs a probability measure de
 $Var$<br>
 Distribution variance function, i.e. a function that inputs a probability measure defined on a given set $S$ and outouts the corresponding distribution's variance (if it exists).
 
+#### 0.3.5. "Drawing from a distribution"
+This is shorthand for "drawing from the random process modelled by the given distribution".
+
 ## 1. Estimators
 _Henceforth, "distribution" = "probability distribution" unless specified._
 <br><br>
@@ -120,7 +122,7 @@ An estimator is a collection of maps (collection, because there is a map for eac
 **NOTE: Independent and identically distributed (IID) samples as a prerequisite for estimation**:<br>The essence of estimation is averaging; we average over many samples from a distribution to get an idea about the distribution itself. To do this, we must first ensure a lack of dependence between consequent samples, since such dependence changes the distribution of consequent samples. In the same vein, since estimation depends on averaging samples from the same distribution, we need to ensure the samples are drawn from the same distribution, i.e. we need to ensure the samples are identically distributed.
 
 ### 1.1. Distribution of an estimator
-Consider a theoretical distribution represented by the probability measure $\mathbb{P}$ applied to a given random process, with the set of all possible outcomes of this random process being $X$. Given an estimator $T^n:X^n \rightarrow \mathbb{R}$ (for all $n$) which estimates some parameter of $\mathbb{P}$, the distribution the estimator is essentially the pushforward measure of $\mathbb{P}^n$ through $T^n$, i.e. $T^n_*\mathbb{P}^n$. This can be understood as the distribution of the results of applying a function $T^n$ to $n$ samples each drawn from $\mathbb{P}$.
+Consider a theoretical distribution $\mathbb{P}$ which models a given random process whose sample space is $X$. Given an estimator $T^n:X^n \rightarrow \mathbb{R}$ (for all $n$) which estimates some parameter of $\mathbb{P}$, the distribution the estimator is essentially the pushforward measure of $\mathbb{P}^n$ through $T^n$, i.e. $T^n_*\mathbb{P}^n$. This can be understood as the distribution of the results of applying a function $T^n$ to $n$ samples each drawn from $\mathbb{P}$.
 
 ### 1.2. Properties of estimators
 These properties support the purpose of estimators; an estimator without one or both of these properties cannot be used for an accurate estimation of distribution parameters. Now, given we have an estimator $T^n$ meant to estimate the parameter $\phi(\mathbb{P})$ of the distribution $\mathbb{P}$...
