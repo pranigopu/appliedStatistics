@@ -9,11 +9,11 @@
       - [0.1.2.2. Maintaing probability distribution across samples](#0122-maintaing-probability-distribution-across-samples)
     - [0.1.3. Sample](#013-sample)
     - [0.1.4. Random sample](#014-random-sample)
-  - [0.2. Measure related](#02-measure-related)
+  - [0.2. Measure-related](#02-measure-related)
     - [0.2.1. Probability measure](#021-probability-measure)
     - [0.2.2. Product measure](#022-product-measure)
       - [0.2.2.1. Product measure of a probability measure](#0221-product-measure-of-a-probability-measure)
-  - [0.3. Probability distribution related](#03-probability-distribution-related)
+  - [0.3. Distribution-related](#03-distribution-related)
     - [0.3.1. Support of a distribution](#031-support-of-a-distribution)
     - [0.3.2. Spread of a distribution](#032-spread-of-a-distribution)
     - [0.3.3. Sum of two distributions](#033-sum-of-two-distributions)
@@ -64,7 +64,7 @@ A single sample, i.e. a single outcome drawn from a random process.
 
 **NOTE 2: Random sample from a population**:<br>Drawing a random sample from a population is the same as drawing a sample from a random process, wherein the random process here is the random selection from the population. This is another way of expressing random sampling, but this is done to make the phrase "sample from a random process" both generalised and unambiguous. This is done to make the expression of related ideas clear and concise.
 
-### 0.2. Measure related
+### 0.2. Measure-related
 #### 0.2.1. Probability measure
 $\mathbb{P}$ denotes the probability measure, i.e. a measure defined on a given set $S$ that inputs a subset of $S$ and outputs that subset's probability mass such (a value between $0$ and $1$) such that the probability mass of $S$ is $1$.
 
@@ -81,12 +81,12 @@ $(M_1 \bigotimes M_2)(A \subseteq X \times Y) = M_1(A)M_2(A)$
 ##### 0.2.2.1. Product measure of a probability measure
 A product measure of a probability measure is the product measure of two or more copies of the probability measure, and results in an independent joint probability distribution (_independent means that no component of the joint outcome affects the others_). Hence, $\mathbb{P}^n$ represents the joint distribution of tuples of $n$ independently drawn samples.
 
-### 0.3. Probability distribution related
+### 0.3. Distribution-related
 #### 0.3.1. Support of a distribution
-The set of values for which the mass (for discrete distributions) or density (for continuous distributions) is non-zero. Equivalently, we can define the support of a distribution as the smallest set of values for which the probability mass is $1$.
+The set of values for which the mass (for discrete distributions) or density (for continuous distributions) is non-zero. Furthermore, we can define the support of a probability distribution as the smallest set of values for which the probability mass is $1$.
 
 #### 0.3.2. Spread of a distribution
-The deviation of distributed values from the distribution mean. This can be measured in many ways, such as variance, standard deviation, mean deviation, interquartile range, etc. Convergence of the spread of a distribution to a specific interval refers to the asymptotic rise with respect to some variable $k$ in the proportion of the mass of the distribution concentrated in the interval. Asymptotic rise in proportion means that the proportion capable of reaching arbitrarily close to $1$, given a large enough $k$.
+The deviation of distributed values from the distribution mean. This can be measured in many ways, such as variance, standard deviation, mean deviation, interquartile range, etc. In a probability distribution, convergence of the spread of the distribution to a specific interval refers to the asymptotic rise with respect to some variable $k$ in the proportion of the mass of the distribution concentrated in the interval. Asymptotic rise in proportion means that the proportion capable of reaching arbitrarily close to $1$, given a large enough $k$.
 
 #### 0.3.3. Sum of two distributions
 Given:
@@ -105,10 +105,10 @@ $\mathbb{P} + ... + \mathbb{P}$ ($n$ times) $= +_*(\mathbb{P}^n)$
 
 #### 0.3.4. Distribution parameter functions
 $\mu$<br>
-Distribution mean function, i.e. a function that inputs a probability measure defined on a given set $S$ and outputs the corresponding probability distribution's mean (if it exists).
+Distribution mean function, i.e. a function that inputs a probability measure defined on a given set $S$ and outputs the corresponding distribution's mean (if it exists).
 
 $Var$<br>
-Distribution variance function, i.e. a function that inputs a probability measure defined on a given set $S$ and outouts the corresponding probability distribution's variance (if it exists).
+Distribution variance function, i.e. a function that inputs a probability measure defined on a given set $S$ and outouts the corresponding distribution's variance (if it exists).
 
 ## 1. Estimators
 _Henceforth, "distribution" = "probability distribution" unless specified._
@@ -120,10 +120,10 @@ An estimator is a collection of maps (collection, because there is a map for eac
 **NOTE: Independent and identically distributed (IID) samples as a prerequisite for estimation**:<br>The essence of estimation is averaging; we average over many samples from a distribution to get an idea about the distribution itself. To do this, we must first ensure a lack of dependence between consequent samples, since such dependence changes the distribution of consequent samples. In the same vein, since estimation depends on averaging samples from the same distribution, we need to ensure the samples are drawn from the same distribution, i.e. we need to ensure the samples are identically distributed.
 
 ### 1.1. Distribution of an estimator
-Given a theoretical distribution represented by the probability measure $\mathbb{P}$ applied to a given set $X$, and given an estimator $T^n:X^n \rightarrow \mathbb{R}$ (for all $n$) which estimates some parameter of $\mathbb{P}$, the distribution the estimator is essentially the pushforward measure of $\mathbb{P}^n$ through $T^n$, i.e. $T^n_*\mathbb{P}^n$. This can be understood as the distribution of the results of applying a function $T^n$ to $n$ samples each drawn from $\mathbb{P}$.
+Consider a theoretical distribution represented by the probability measure $\mathbb{P}$ applied to a given random process, with the set of all possible outcomes of this random process being $X$. Given an estimator $T^n:X^n \rightarrow \mathbb{R}$ (for all $n$) which estimates some parameter of $\mathbb{P}$, the distribution the estimator is essentially the pushforward measure of $\mathbb{P}^n$ through $T^n$, i.e. $T^n_*\mathbb{P}^n$. This can be understood as the distribution of the results of applying a function $T^n$ to $n$ samples each drawn from $\mathbb{P}$.
 
 ### 1.2. Properties of estimators
-These properties support the purpose of estimators; an estimator without one or both of these properties cannot be used for an accurate estimation of distribution parameters. Now, given we have an estimator $T^n$ meant to estimate the parameter $\phi(\mathbb{P})$ of the distribution corresponding to $\mathbb{P}$...
+These properties support the purpose of estimators; an estimator without one or both of these properties cannot be used for an accurate estimation of distribution parameters. Now, given we have an estimator $T^n$ meant to estimate the parameter $\phi(\mathbb{P})$ of the distribution $\mathbb{P}$...
 
 1. **Unbiasedness**<br>$\mu({T^n}_*\mathbb{P}^n) = \phi(\mathbb{P})$
 2. **Consistency**<br>$\displaystyle \lim_{n \rightarrow \infty} T^n_*\mathbb{P}^n([\phi(\mathbb{P}) - \epsilon, \phi(\mathbb{P}) + \epsilon]) = 1, \forall \epsilon > 0$
