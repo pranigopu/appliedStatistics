@@ -3,29 +3,30 @@
 # 0. Definitions
 The following are defined and explained in the file on [approximating distributions](https://github.com/pranigopu/appliedStatistics/blob/60da65c6de1fb42cc2ffb0a1dd8523a3429d937f/expansion/approximatingDistributions.md):
 
-- Population and sample
+- Population, random process, sample & sample space
 - Generalising a population's distribution with a random process
 - Generalising random sampling as sampling from a random process
 - Maintaining the distribution of a random process across samples
+- "Drawing from a distribution"
 
 _Henceforth, "distribution" = "probability distribution" unless specified._
 
 # 1. Introduction
-Let $D$ be a theoretical distribution which models some random process. Now, consider that we want to either (1) study this distribution through its samples or (2) study the samples with respect to $D$ (for example, to try to find out whether these samples are in fact drawn from $D$). Furthermore, case (1) could be a case wherein we want to either try to (1.1) judge the plausibility of an estimate of a parameter of $D$, given that the parameter is unknown, or (1.2) judge the plausbility of a possible $D$ among a family of distributions (considering we know or assume that the random process is distributed by a distribution from this family). In all these cases, we have:
+Let $\mathbb{P}$ be a theoretical distribution which models a given random process. Now, consider that we want to either (1) study this distribution through its samples or (2) study the samples with respect to $\mathbb{P}$ (for example, to try to find out whether these samples are in fact drawn from $\mathbb{P}$). Furthermore, case (1) could be a case wherein we want to either try to (1.1) judge the plausibility of an estimate of a parameter of $\mathbb{P}$, given that the parameter is unknown, or (1.2) judge the plausbility of a possible $\mathbb{P}$ among a family of distributions (considering we know or assume that the random process is distributed by a distribution from this family). In all these cases, we have:
 
-- Theoretical distribution $D$, which may be:
+- Theoretical distribution $\mathbb{P}$, which may be:
     - Known
     - Assumed
     - Unknown (with only its family known or assumed)
-- Samples from a random process (may or may not be modelled by $D$), which may be:
-    - Known to be drawn from $D$
-    - Assumed to be drawn from $D$
-    - Not certain to be drawn from $D$
+- Samples from a random process (may or may not be modelled by $\mathbb{P}$), which may be:
+    - Known to be drawn from $\mathbb{P}$
+    - Assumed to be drawn from $\mathbb{P}$
+    - Not certain to be drawn from $\mathbb{P}$
 
 In the case where everything is known, no further work is needed. But in the case where one or more aspects are assumed or unknown or both, we have a reason to test our assumptions and try to discover a relationship between the samples and the theoretical distribution, if one exists. The use of statistical methods to test assumptions about a theoretical distribution with respect to samples or about samples with respect to a theoretical distribution is hypothesis testing. Alternatively, instead of referring to samples we can refer to an "observed random process" from which the samples are drawn; hypothesis testing, then, is the use of statistical methods to test assumptions about the relation between the distribution of an observed random process and a theoretical distribution modelling some random process (which may or may not be the observed random process).
 
 ## 1.1. Test statistic
-Consider a theoretical distribution represented by the probability measure $\mathbb{P}$ applied to a given random process, with the set of all possible outcomes of this random process being $X$. A test statistic is an estimator of some parameter of $\mathbb{P}$ or a function of an estimator of some parameter of $\mathbb{P}$, i.e. it is a collection of maps (collection, because there is a map for each value of $n \in \mathbb{N}$) $T^n:X^n \rightarrow \mathbb{R}$ which implements some operation on any tuple of $X^n$. As with estimators, the distribution of the test statistic is a pushforward measure on $\mathbb{P}^n$ through $T^n$, i.e. $T^n_*\mathbb{P}^n$. This can be understood as the distribution of the results of applying a function $T^n$ to $n$ samples each drawn from $\mathbb{P}$.
+Consider a theoretical distribution $\mathbb{P}$ which models a given random process whose sample space is $X$. A test statistic is an estimator of some parameter of $\mathbb{P}$ or a function of an estimator of some parameter of $\mathbb{P}$, i.e. it is a collection of maps (collection, because there is a map for each value of $n \in \mathbb{N}$) $T^n:X^n \rightarrow \mathbb{R}$ which implements some operation on any tuple of $X^n$. As with estimators, the distribution of the test statistic is a pushforward measure on $\mathbb{P}^n$ through $T^n$, i.e. $T^n_*\mathbb{P}^n$. This can be understood as the distribution of the results of applying a function $T^n$ to $n$ samples each drawn from $\mathbb{P}$.
 <br><br>
 
 To test how plausible the observed value of the test statistic is, we need to have some idea about the probability distribution of the test statistic itself. The essence of hypothesis testing is figuring out the test statistic's probability distribution (through exact derivations or approximations), then using this distribution to judge the plausibility of an observed value. We ask, in effect, "Given a set of samples as well as the knowledge and assumptions about the samples, the distribution and their relation, is the observed value too extreme (i.e. too unlikely or implausible)?"
