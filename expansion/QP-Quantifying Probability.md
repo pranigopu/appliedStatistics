@@ -111,7 +111,7 @@ To reinforce the last few statements...
 
 <br>
 
-Probability density is hence a useful concept, albeit a more abstract concept than probability mass. Of course, just as with CDF, we can study the spread of the distribution using the probability measure and the derivatives of cumulative probability mass, but the concept a probability density function, i.e. PDF offers economy in thought, reference and notation. For convenience, we shall notate the PDF $F^1$ as $f$. Just to clarify:
+Probability density is hence a useful concept, albeit a more abstract concept than probability mass. Of course, just as with CDF, we can study the spread of the distribution using the probability measure and the derivatives of cumulative probability mass, but the concept a probability density function, i.e. PDF offers economy in thought, reference and notation. For convenience, we shall notate the PDF $F^1$ as $f$. Just to clarify, given a point $x$ in the sample space:
 
 - $f(x) = \frac{d \mathbb{P}((-\infty, x])}{dx} = \frac{d F(x)}{dx} = F^1(x)$
 - **_Probability density defined at a point_** $x$ **_is the gradient of the cumulative probability mass at_** $x$
