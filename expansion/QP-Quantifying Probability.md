@@ -79,9 +79,8 @@ _First, some buildup_...
 
 Let $\mathbb{P}$ be a probability distribution defined for a random process $\theta$ whose sample space is $X$. Let $F$ be the CDF of $\mathbb{P}$. Now, given a point $x \in X$, consider the following:
 
-$F(x) = \mathbb{P}((-\infty, x])$ (definition of CDF)
-
-$\mathbb{P}([a, b]) = \mathbb{P}((-\infty, b]) - \mathbb{P}((-\infty, a]) = F(b) - F(a)$
+- $F(x) = \mathbb{P}((-\infty, x])$ (_definition of CDF_)
+- $\mathbb{P}([a, b]) = \mathbb{P}((-\infty, b]) - \mathbb{P}((-\infty, a]) = F(b) - F(a)$
 
 ---
 
