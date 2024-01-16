@@ -118,4 +118,4 @@ Probability density is hence a useful concept, albeit a more abstract concept th
 
 <br>
 
-**NOTE: The domain of CDF and PDF**:<br>Both the CDF and the PDF are defined not for intervals but single points in the sample space; they are less generalised functions than a probability measure and have to be treated as specific aspects of the probability measure.
+**NOTE: The domain of CDF and PDF**:<br>Both the CDF and the PDF are defined not for intervals but single points in the sample space; they are less generalised functions than a probability measure and have to be treated as specific operations of the probability measure.
