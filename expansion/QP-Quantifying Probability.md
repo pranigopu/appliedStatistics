@@ -115,3 +115,7 @@ Probability density is hence a useful concept, albeit a more abstract concept th
 
 - $f(x) = \frac{d \mathbb{P}((-\infty, x])}{dx} = \frac{d F(x)}{dx} = F^1(x)$
 - **_Probability density defined at a point_** $x$ **_is the gradient of the cumulative probability mass at_** $x$
+
+<br>
+
+**NOTE: The domain of CDF and PDF**:<br>Both the CDF and the PDF are defined not for intervals but single points in the sample space; they are less generalised functions than a probability measure and have to be treated as specific aspects of the probability measure.
