@@ -94,9 +94,6 @@ With this result, we have that:
 
 $\displaystyle \mathbb{P}([a, b]) = \int_a^b F^1(t) dt$
 
-_Now, to define the topic at hand_...
-<br><br>
-
 Hence, we get $F^1$ as the function such that its integral for any interval $[a, b]$ is the probability mass of that interval under the distribution $\mathbb{P}$. In other words, $F^1$ is a curve such that the area under the curve for any interval represents the probability mass of that interval under the distribution $\mathbb{P}$. From this, we can see that $F^1$ is valuable to help visualise, conceptualise and thus study the spread of the mass of the distribution.
 <br><br>
 
