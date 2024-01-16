@@ -1,25 +1,5 @@
 # Approximating distributions
 
-## CONTENTS
-- [0. Key ideas \& definitions](#0-key-ideas--definitions)
-  - [0.1. Product measure](#01-product-measure)
-    - [0.1.1. Product measure of a probability measure](#011-product-measure-of-a-probability-measure)
-  - [0.2. Definitions related to distributions](#02-definitions-related-to-distributions)
-    - [0.2.1. Support of a distribution](#021-support-of-a-distribution)
-    - [0.2.2. Spread of a distribution](#022-spread-of-a-distribution)
-    - [0.2.3. Sum of two distributions](#023-sum-of-two-distributions)
-    - [0.2.4. Distribution parameter functions](#024-distribution-parameter-functions)
-  - [0.3 Maintaing probability distribution across samples](#03-maintaing-probability-distribution-across-samples)
-- [1. Estimators](#1-estimators)
-  - [1.1. Distribution of an estimator](#11-distribution-of-an-estimator)
-  - [1.2. Properties of estimators](#12-properties-of-estimators)
-  - [1.3. Some noteworthy estimators](#13-some-noteworthy-estimators)
-- [2. Limit laws](#2-limit-laws)
-  - [2.1. Laws of large numbers](#21-laws-of-large-numbers)
-    - [2.1.1. Weak law of large numbers](#211-weak-law-of-large-numbers)
-    - [2.1.2. Strong law of large numbers](#212-strong-law-of-large-numbers)
-  - [2.2. Central limit theorem](#22-central-limit-theorem)
-
 ## 0. Key ideas & definitions
 Some phrases and terms regarding probability distributions are discussed in the file on quantifying probabilities. Chiefly, the phrase "drawing from a distribution" is clarified there. Other key ideas and concepts are...
 
