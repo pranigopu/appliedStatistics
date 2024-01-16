@@ -4,7 +4,7 @@
 _The need for such a generalisation and formalisation is to allow us to talk about probability in an unambiguous but sufficiently generalised context while making the presentation of these ideas more concise (thus easier to retain)_.
 <br><br>
 
-What is probability, and when does probability come into the picture? Cognition has two basic states, namely ignorance and knowledge. In ignorance, we have no information about the nature of the object of cognition, so we have no certainty whatsoever about any of its potential. In knowledge, we have all the information about the _essential_ nature of the object of cognition - essential within a given context - to have certainty about its potential, i.e. about how it will act or be acted upon. However, cognition is not binary; when learning of the nature of something, we do not go always from no knowledge to full knowledge - full within a given context. There may be and often are states of cognition for partial information, so that we may know only part of the object's potential. In essence, probability is the quantification of the level of certainty or uncertainty we have regarding some aspect of the potential of some object of cognition, which may be an entity, an environment, a phenomenon, etc. 
+What is probability, and when does probability come into the picture? Cognition has two basic states, namely ignorance and knowledge. In ignorance, we have no information about the nature of the object of cognition, so we have no certainty whatsoever about any of its potential. In knowledge, we have all the information about the _essential_ nature of the object of cognition - essential within a given context - to have certainty about its potential, i.e. about how it will act or be acted upon. However, cognition is not binary; when learning the nature of something, we do not go always from no knowledge to full knowledge - full within a given context. There may be and often are states of cognition for partial information, so that we may know only part of the object's potential. In essence, probability is the quantification of the level of certainty or uncertainty we have regarding some aspect of the potential of an object of cognition, which may be an entity, an environment, a phenomenon, etc. 
 
 ### Random process (_a preliminary concept_)
 Random process is a process with a defined set of possible outcomes wherein one or all factors key to its outcomes are unknown, for practical or other reasons. A process is specific aspect of the behaviour of an object of cognition, while an outcome is specific aspect of the potential of this object regarding this behaviour. Thus, "random process" generalises the concept of a specific aspect of the behaviour an unknown object of cognition in a specific context which we can only come to know - for practical or other reasons - by observing the outcomes it produces. Hence, we can generalise the concept of probability as the quantification of the information we have about potential outcomes of a random process.
@@ -22,7 +22,7 @@ A measure is a function that maps each subset of a given set $X$ to a non-negati
 A probability measure is the formalisation of probability as a kind of measure. Often denoted as $\mathbb{P}$, a probability measure is a measure that maps each subset of a given set to a real value from $0$ to $1$ called "probability mass", with the probability mass of the set as a whole being $1$. Given that it formalises the concept of the probability of outcomes of a given random process, it is clear that the way mapping between outcomes and probabilities is done depends on the random process in question. This reinforces the fact that "probability measure" as such is a kind of measure, i.e. as such, it refers to a class of measures; a probability measure $\mathbb{P}$ applied to a particular random process represents a particular _distribution_ of probabilities. To rephrase, **_a probability distribution is a probability measure applied to a particular random process_**.
 
 ## 2. Studying populations with probability
-Now, we shall define (if necessary) and integrate the concepts of population, random process, sample and random sample. We do this to integrate the idea of probability to the wider concept of studying non-enumerable classes of entities or events using data. Why is this necessary?
+Now, we shall define (if necessary) and integrate the concepts of population, random process, sample and random sample. We do this to integrate the idea of probability to the wider concept of studying non-enumerable classes of entities or events using data, thus integrating probability to the study of statistics in a wider sense. Why is this relevant?
 <br><br>
 
 A non-enumerable class is one whose members cannot all be studied, making the class "unlimited", either only in practice or in both theory and practice. To study the nature of the members of a non-enumerable class as a whole (i.e. in general), we need to make generalisations, through either induction or statistics (i.e. measurements on raw data); the statistical approach is weaker, but in many cases, it is the only approach that can be taken. When we need to study a non-enumerable class using the data of samples drawn from it, we deal with uncertainty about the characteristics of the class as a whole. This is because samples are particulars; using data alone without induction, universals can only be approximated from particulars (_universals also cannot be deduced from particulars_). Hence, drawing and measuring samples from the population is part of a random process, which makes probability measures the right tools to study such a class further in such a context.
@@ -56,6 +56,7 @@ Clarifying the meaning of some phrases used later that use terms defined so far.
 |Term/phrase|Meaning|
 |--- |--- |
 |Sample space of random process $\theta$|The set of all possible outcomes of $\theta$|
+|Sample space of distribution $\mathbb{P}$|The set of all possible outcomes of the random process modelled by $\mathbb{P}$|
 |Drawing from a distribution|Drawing a sample from the random process modelled by the given distribution|
 |Distribution defined for random process $\theta$|Distribution which models $\theta$|
 |Distribution defined on a set $X$|Distribution defined for some random process whose sample space is $X$|
@@ -64,8 +65,50 @@ Clarifying the meaning of some phrases used later that use terms defined so far.
 In the previous section, we defined probability distributions as measures, specifically as probability measures. Thus, mathematics being the science of measurement is the science we must use to explore probability distributions. To do this, we must express probability distributions as mathematical objects.
 
 ### Cumulative distribution function
-Formally, a cumulative distribution function (CDF) of a probability distribution $\mathbb{P}$ defined on a set $X$ is given by:
+ Consider a probability distribution $\mathbb{P}$ defined for a random process $\theta$ whose sample space is $X$. Then, formally, the cumulative distribution function (CDF) $F$ of $\mathbb{P}$ at the point $x \in X$ is given by:
 
-$CDF(t) = \mathbb{P}((-\infty, t])$
+$F(x) = \mathbb{P}((-\infty, t])$
 
-i.e. the CDF value of any point $t$ is the cumulative probability mass upto $t$, i.e. the probability mass of all values less than or equal to $t$.
+i.e. the CDF value of any point $x$ is the cumulative probability mass upto $x$, i.e. the probability mass of all values less than or equal to $x$. $-\infty$ here only represents the idea of not fixing a lower bound; we want to include any and every point that may be below $x$, regardless of the given distribution's sample space. In practice, there may be a lower bound $b$ below which the probability mass is always zero; in such a case, the interval $(-\infty, x]$ can be replaced by $[b, x]$.
+
+Why define the CDF? The CDF allows us to _conveniently_ study the proportional effect of a change in the probability mass at a specific point in the sample space (proportional $\implies$ with respect to the total probability mass $1$) as well as the rate of the change at that point. Of course, we can simply use the probability measure as seen above, but the concept CDF offers economy in thought, reference and notation.
+
+### Probability density function
+_First, some buildup_...
+<br><br>
+
+Let $\mathbb{P}$ be a probability distribution defined for a random process $\theta$ whose sample space is $X$. Let $F$ be the CDF of $\mathbb{P}$. Now, given a point $x \in X$, consider the following:
+
+$F(x) = \mathbb{P}((-\infty, x])$ (definition of CDF)
+
+$\mathbb{P}([a, b]) = \mathbb{P}((-\infty, b]) - \mathbb{P}((-\infty, a]) = F(b) - F(a)$
+
+---
+
+Now, set aside the above for a moment and consider the first-order derivative of $F$, i.e. $F^1$. Integrating $F^1$ for the interval $[a, b]$ results in:
+
+$\displaystyle \int_a^b F^1(t) dt = [F(t)]_b^a = F(b) - F(a)$
+
+---
+
+With this results, we have that:
+
+$\displaystyle \mathbb{P}([a, b]) = \int_a^b F^1(t) dt$
+
+Hence, we get $F^1$ as the function such that its integral for any interval $[a, b]$ is the probability mass of that interval under the distribution $\mathbb{P}$. In other words, $F^1$ is a curve such that the area under the curve for any interval represents the probability mass of that interval under the distribution $\mathbb{P}$. From this, we can see that $F^1$ is valuable to help visualise, conceptualise and thus study the spread of the mass of the distribution.
+<br><br>
+
+Now, also consider what $F^1(x)$ represents for any point $x$ in the sample space. Evidently, it is the gradient, i.e. rate of change of the cumulative probability mass at that point. A higher gradient represents a higher rise in probability mass at that point, which shows a higher concentration of the probability mass in a small neighbourhood of that point. Thus, we term the gradient of the cumulative probability mass at a point as the probability density at the point.
+<br><br>
+
+To reinforce the last few statements...
+
+1. Comparing the probability densities of each of two points in the sample space indicates a small neighbourhood of the point where there is a higher proportion of the total probability mass compared to the same small interval of the other point.
+2. Comparing the way the probability density values for each of two distributions helps us compare the way outcomes from each distribution are expected to be spread over space, time, the population or some other metric.
+3. The key purpose of probability density is to study the spread of the distribution, i.e. to study how and in what proportions is the total probability mass concentrated across the sample space.
+
+<br>
+
+Probability density is hence a useful concept. Of course, just as with CDF, we can study the spread of the distribution using the probability measure and the derivatives of cumulative probability mass, but the concept a probability density function, i.e. PDF offers economy in thought, reference and notation. For convenience, we shall notate the PDF $F^1$ as $f$. Just to clarify:
+
+$f(x) = \frac{d \mathbb{P}((-\infty, x])}{dx} = \frac{d F(x)}{dx} = F^1(x)$
