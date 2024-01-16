@@ -62,7 +62,7 @@ Clarifying the meaning of some phrases used later that use terms defined so far.
 |Distribution defined on a set $X$|Distribution defined for some random process whose sample space is $X$|
 
 ## 3. Mathematically defining probability distributions
-In the previous section, we defined probability distributions as measures, specifically as probability measures. Thus, mathematics being the science of measurement is the science we must turn to for exploring probability distributions. To do this, we must express probability distributions as more useful mathematical objects.
+In the previous section, we defined probability distributions as measures, specifically as probability measures. Thus, mathematics being the science of measurement is the science we must turn to for exploring probability distributions. To do this, we shall express probability distributions as more useful mathematical objects.
 
 ### Cumulative distribution function
  Consider a probability distribution $\mathbb{P}$ defined for a random process $\theta$ whose sample space is $X$. Then, formally, the cumulative distribution function (CDF) $F$ of $\mathbb{P}$ at the point $x \in X$ is given by:
