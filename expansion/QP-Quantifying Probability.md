@@ -70,14 +70,14 @@ _First, a key concept_...
 ### Pushforward measure
 Let measure $M$ be defined for a set $X$ in a specific context. Now, consider a set $Y$ wherein, in this context, each element of $Y$ is a function of an element in $X$, i.e. there is a function $f$ such that $f(x) = y, \forall x \in X, y \in Y$ (hence, note that $f$ is surjective, i.e. every image has a preimage). Then, the pushforward measure of $M$ through $f$ is given by:
 
-$f_*M(y) = M(f^{-1}(y)) = M(\{x | f(x) = y, x \in X\})$
+$f_*M(y) = M(f^{-1}(y)) = M(\{ x | f(x) = y, x \in X \})$
 
 **NOTE**: $f^{-1}$ is the inverse function of $f$, defined such that it inputs an element $y$ of $Y$ and outputs the element or elements of $X$ that map to $y$ through $f$.
 
 ### Pushforward probability measure
 Let $\mathbb{P}$ be a probability distribution defined for a random process $\theta$ whose sample space is $X$. Now, consider the sample space $Y$ of $\theta$ after transforming any and every outcome of $\theta$ by a function $f$. It is clear that since the transformed outcomes come from the same core random process, their distribution can be derived from the distribution of the untransformed outcomes, namely $\mathbb{P}$. In particular, we can see that the probability mass of any subset of values $B$ in $Y$ is exactly the probability mass of the set of all values in $X$ that map to the values in $B$, because (1) the values in $B$ are but a subset of transformed outcomes of $\theta$ and (2) the sample space of $\theta$ is $X$. Hence, the probability mass of $B$ is given by:
 
-$\mathbb{P}(\{x | f(x) = y \in B, x \in X\}) = \mathbb{P}(f^{-1}(B))$
+$\mathbb{P}(\{ x | f(x) = y \in B, x \in X \}) = \mathbb{P}(f^{-1}(B))$
 
 But this is exactly the pushforward measure of $\mathbb{P}$ through $f$ applied to $B$, i.e. $f_*\mathbb{P}(B)$. Hence, we see the use of pushforward in formalising the idea of applying a distribution of outcomes to a transformation of these outcomes using the transformation function.
 
