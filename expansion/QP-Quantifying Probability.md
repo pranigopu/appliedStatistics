@@ -4,28 +4,28 @@
 _The need for such a generalisation and formalisation is to allow us to talk about probability in an unambiguous but sufficiently generalised context while making the presentation of these ideas more concise (thus easier to retain)_.
 <br><br>
 
-What is probability, and when does probability come into the picture? Cognition has two basic states, namely ignorance and knowledge. In ignorance, we have no information about the nature of the object of cognition, so we have no certainty whatsoever about any of its potential. In knowledge, we have all the information about the _essential_ nature of the object of cognition - essential within a given context - to have certainty about its potential, i.e. about how it will act or be acted upon. However, cognition is not binary; when learning the nature of something, we do not go always from no knowledge to full knowledge (full within a given context). There may be and often are states of cognition for partial information, so that we may know only part of the object's potential. In essence, probability is the quantification of the level of certainty or uncertainty we have regarding some aspect of the potential of an object of cognition, which may be an entity, an environment, a phenomenon, etc. 
+What is probability, and when does probability come into the picture? Cognition has two basic states, namely ignorance and knowledge. In ignorance, we have no information about the nature of the object of cognition, so we have no certainty whatsoever about any of its potential. In knowledge, we have all the information about the _essential_ nature of the object of cognition - essential within a given context - to have certainty about its potential, i.e. about how it will act or be acted upon. However, cognition is not binary; when learning the nature of something, we do not go always from no knowledge to full knowledge - full within a given context. There may be and often are states of cognition for partial information, so that we may know only part of the object's potential. In essence, probability is the quantification of the level of certainty or uncertainty we have regarding some aspect of the potential of an object of cognition, which may be an entity, an environment, a phenomenon, etc. 
 
 ### Random process (_a preliminary concept_)
-Random process is a process with a defined set of possible outcomes wherein one or all factors key to its outcomes are unknown, for practical or other reasons. A process is specific aspect of the behaviour of an object of cognition, while an outcome is a specific aspect of the potential of this object regarding this behaviour. Thus, "random process" generalises the concept of a specific aspect of the behaviour an unknown object of cognition in a specific context which we can only come to know - for practical or other reasons - by observing the outcomes it produces. Hence, we can generalise the concept of probability as the quantification of the information we have about potential outcomes of a random process.
+Random process is a process with a defined set of possible outcomes wherein one or all factors key to its outcomes are unknown, for practical or other reasons. A process is specific aspect of the behaviour of an object of cognition, while an outcome is specific aspect of the potential of this object regarding this behaviour. Thus, "random process" generalises the concept of a specific aspect of the behaviour an unknown object of cognition in a specific context which we can only come to know - for practical or other reasons - by observing the outcomes it produces. Hence, we can generalise the concept of probability as the quantification of the information we have about potential outcomes of a random process.
 
 ### Quantifying probabilities as proportions
 Let us begin by quantifying certainty about a certain outcome as $1$ and $0$, wherein $1$ quantifies the certainty of the outcome being observed and $0$ quantifies the certainty of the outcome not being observed. We do not choose these values arbitrarily; they are based on the idea of expected proportions. If something is certain to be observed in a given context, we expect it to be observed in $100$% of the cases wherein the given context holds. Similarly, if something is certain to not be observed in a given context, we expect it to be observed in $0$% of the cases wherein the context holds. If we are uncertain, our expectation has to be between $0$% and $100$%, since an uncertain outcome may be observed only some of the times, i.e. some proportion of the times less than $1$ but greater than $0$. In this light, we see that probability is the quantification of expectations (more specifically, the expectations about the outcomes of a random process).
 
 ### Measure
-Consider a random process $\theta$. It is clear that some but any outcome of $\theta$ will certainly be observed; we have this certainty at any moment. At a given moment, since each set of outcomes of $\theta$ have some probability of being observed while the probability of observing some but any outcome of $\theta$ is $1$, it follows that the sum of the probabilities of each pairwise disjoint subset of outcomes that together make up the set of all possible outcomes is $1$. In other words, each of these subsets of outcomes may be expected to be observed in only some proportion of cases, but together, their proportion of being observed must add up to $1$ as together they make up the whole of the potential of $\theta$ in the given context. Seeing probabilities as "proportional" potential helps us see that the probability of any subset of the set of all possible outcomes is a part of the whole. It is handy, then, that there is a concept that formalises such "proportional" quantification of a set, namely, the concept of "measure". Using this concept, we can define probability as a kind of measure, thus being able to apply the properties of measures in general to probabilities in particular.
+Consider a random process $\theta$. It is clear that some but any outcome of $\theta$ will certainly be observed; we have this certainty at any moment. At a given moment, since each set of outcomes of $\theta$ have some probability of being observed but the probability of observing some but any outcome of $\theta$ is $1$, it follows that sum of the probabilities of each pairwise disjoint subset of outcomes that together make up the set of all possible outcomes is $1$. In other words, each of these subsets of outcomes may be expected to be observed in only some proportion of cases, but together, their proportion of being observed must add up to $1$ as together they make up the whole of the potential of $\theta$ in the given context. Seeing probabilities as "proportional" potential helps us see that the probability of any subset of the set of all possible outcomes is a part of the whole. It is handy, then, that there is a concept that formalises such "proportional" quantification of a set, namely, the concept of "measure". Using this concept, we can define probability as a kind of measure, thus being able to apply the properties of measures in general to probabilities in particular.
 <br><br>
 
 A measure is a function that maps each subset of a given set $X$ to a non-negative real value called "mass" (_the non-negativity property_), such that the mass of $X$ as a whole is the total mass of pairwise disjoint subsets of $X$ that together make up $X$ (_the additivity property_). Note, of course, that the subset may be a set with but one element. A measure generalises and formalises the concept of quantifying some aspect of each subset of a set that is present in the subset as a part of the whole. For example, a counting measure quantifies the size of a subset; each subset's size is a part of the size of the set as a whole. Other examples of measures present in subsets of a set as parts of a whole are area of a shape and its parts, volume of a solid and its parts, the probability of some and all of the outcomes of a random process, etc.
 
 ### Probability measure & distribution
-A probability measure is the formalisation of probability as a kind of measure. Often denoted as $\mathbb{P}$, a probability measure is a measure that maps each subset of a given set to a real value from $0$ to $1$ called "probability mass", with the probability mass of the set as a whole being $1$. Given that it formalises the concept of the probability of outcomes of a given random process, it is clear that the way mapping between outcomes and probabilities is done depends on the random process in question. This reinforces the fact that "probability measure" as such is a kind of measure, i.e. as such, it refers to a class of measures; a probability measure $\mathbb{P}$ applied to a particular random process represents a particular probability measure, a particular _distribution_ of probabilities. To rephrase, **_a probability distribution is a probability measure applied to a particular random process_**.
+A probability measure is the formalisation of probability as a kind of measure. Often denoted as $\mathbb{P}$, a probability measure is a measure that maps each subset of a given set to a real value from $0$ to $1$ called "probability mass", with the probability mass of the set as a whole being $1$. Given that it formalises the concept of the probability of outcomes of a given random process, it is clear that the way mapping between outcomes and probabilities is done depends on the random process in question. This reinforces the fact that "probability measure" as such is a kind of measure, i.e. as such, it refers to a class of measures; a probability measure $\mathbb{P}$ applied to a particular random process represents a particular _distribution_ of probabilities. To rephrase, **_a probability distribution is a probability measure applied to a particular random process_**.
 
 ## 2. Studying populations with probability
-Now, we shall define (if necessary) and integrate the concepts of population, random process, sample and random sample. We do this to integrate the idea of probability to the wider concept of studying non-enumerable classes of entities or events using data, thus integrating the concept of probability to the study of statistics in a wider sense. Why is this relevant?
+Now, we shall define (if necessary) and integrate the concepts of population, random process, sample and random sample. We do this to integrate the idea of probability to the wider concept of studying non-enumerable classes of entities or events using data, thus integrating probability to the study of statistics in a wider sense. Why is this relevant?
 <br><br>
 
-A non-enumerable class is one whose members cannot all be studied, making the class "unlimited", either only in practice or in both theory and practice. To study the nature of the members of a non-enumerable class as a whole (i.e. in general), we need to make generalisations, through either induction or statistics (i.e. measurements on raw data); the statistical approach is weaker, but in many cases, it is the only approach that can be taken. Now, when we need to study a non-enumerable class using the data of samples drawn from it, we deal with uncertainty about the characteristics of the class as a whole. This is because samples are particulars; without induction, universals can at best only be approximated from particulars. Hence, inferences from the data of samples of a non-enumerable class are uncertain, but the data does reveal _something_; this makes probability measures the right tools to study such a class further in such a context.
+A non-enumerable class is one whose members cannot all be studied, making the class "unlimited", either only in practice or in both theory and practice. To study the nature of the members of a non-enumerable class as a whole (i.e. in general), we need to make generalisations, through either induction or statistics (i.e. measurements on raw data); the statistical approach is weaker, but in many cases, it is the only approach that can be taken. When we need to study a non-enumerable class using the data of samples drawn from it, we deal with uncertainty about the characteristics of the class as a whole. This is because samples are particulars; using data alone without induction, universals can only be approximated from particulars (_universals also cannot be deduced from particulars_). Hence, drawing and measuring samples from the population is part of a random process, which makes probability measures the right tools to study such a class further in such a context.
 
 ### Population
 The set of all elements in a class of similar elements, i.e. the set of all units of a specific kind. This can be the set of all...
@@ -61,8 +61,31 @@ Clarifying the meaning of some phrases used later that use terms defined so far.
 |Distribution defined for random process $\theta$|Distribution which models $\theta$|
 |Distribution defined on a set $X$|Distribution defined for some random process whose sample space is $X$|
 
-## 3. Mathematically defining probability distributions
-In the previous section, we defined probability distributions as measures, specifically as probability measures. Thus, mathematics being the science of measurement is the science we must turn to for exploring probability distributions. To do this, we shall express probability distributions as more useful mathematical objects.
+## 3. Probability distributions for transformed spaces
+Here, we shall see a way in which formalising probability as a kind of measure is useful in expanding the use of probability distributions. In particular, if we have a random process whose outcomes are transformed by a function, we can obtain the distribution of these transformed outcomes using the distribution of the untransformed outcomes. 
+<br><br>
+
+_First, a key concept_...
+
+### Pushforward measure
+Let measure $M$ be defined for a set $X$ in a specific context. Now, consider a set $Y$ wherein, in this context, each element of $Y$ is a function of an element in $X$, i.e. there is a function $f$ such that $f(x) = y, \forall x \in X, y \in Y$ (hence, note that $f$ is surjective, i.e. every image has a preimage). Then, the pushforward measure of $M$ through $f$ is given by:
+
+$f_*M(y) = M(f^{-1}(y)) = M(\{x | f(x) = y, x \in X\})$
+
+**NOTE**: $f^{-1}$ is the inverse function of $f$, defined such that it inputs an element $y$ of $Y$ and outputs the element or elements of $X$ that map to $y$ through $f$.
+
+### Pushforward probability measure
+Let $\mathbb{P}$ be a probability distribution defined for a random process $\theta$ whose sample space is $X$. Now, consider the sample space $Y$ of $\theta$ after transforming any and every outcome of $\theta$ by a function $f$.
+<br><br>
+
+It is clear that since the transformed outcomes come from the same core random process, their distribution can be derived from the distribution of the untransformed outcomes, namely $\mathbb{P}$. In particular, we can see that the probability mass of any subset of values $B$ in $Y$ is exactly the probability mass of the set of all values in $X$ that map to the values in $B$, because (1) the values in $B$ are but a subset of transformed outcomes of $\theta$ and (2) the sample space of $\theta$ is $X$. Hence, the probability mass of $B$ is given by:
+
+$\mathbb{P}(\{x | f(x) = y \in B, x \in X\}) = \mathbb{P}(f^{-1}(B))$
+
+But this is exactly the pushforward measure of $\mathbb{P}$ through $f$ applied to $B$, i.e. $f_*\mathbb{P}(B)$. Hence, we see the use of pushforward in formalising the idea of applying a distribution of outcomes to a transformation of these outcomes using the transformation function.
+
+## 4. Mathematically defining probability distributions
+In the previous section, we defined probability distributions as measures, specifically as probability measures. Thus, mathematics being the science of measurement is the science we must use to explore probability distributions. To do this, we must express probability distributions as mathematical objects.
 
 ### Cumulative distribution function
  Consider a probability distribution $\mathbb{P}$ defined for a random process $\theta$ whose sample space is $X$. Then, formally, the cumulative distribution function (CDF) $F$ of $\mathbb{P}$ at the point $x \in X$ is given by:
@@ -86,7 +109,7 @@ Let $\mathbb{P}$ be a probability distribution defined for a random process $\th
 
 Now, set aside the above for a moment and consider the first-order derivative of $F$, i.e. $F^1$. Integrating $F^1$ for the interval $[a, b]$ results in:
 
-$\displaystyle \int_a^b F^1(t) dt = [F(t)]_a^b = F(b) - F(a)$
+$\displaystyle \int_a^b F^1(t) dt = [F(t)]_b^a = F(b) - F(a)$
 
 ---
 
@@ -94,15 +117,18 @@ With this result, we have that:
 
 $\displaystyle \mathbb{P}([a, b]) = \int_a^b F^1(t) dt$
 
+_Now, to define the topic at hand_...
+<br><br>
+
 Hence, we get $F^1$ as the function such that its integral for any interval $[a, b]$ is the probability mass of that interval under the distribution $\mathbb{P}$. In other words, $F^1$ is a curve such that the area under the curve for any interval represents the probability mass of that interval under the distribution $\mathbb{P}$. From this, we can see that $F^1$ is valuable to help visualise, conceptualise and thus study the spread of the mass of the distribution.
 <br><br>
 
-Now, also consider what $F^1(x)$ represents for any point $x$ in the sample space. Evidently, it is the gradient, i.e. rate of change of the cumulative probability mass at that point. A higher gradient represents a higher rise in probability mass at that point, which shows a higher concentration of the probability mass in a small neighbourhood of that point. Thus, we term the gradient of the cumulative probability mass at a point as the probability density at that point.
+Now, also consider what $F^1(x)$ represents for any point $x$ in the sample space. Evidently, it is the gradient, i.e. rate of change of the cumulative probability mass at that point. A higher gradient represents a higher rise in probability mass at that point, which shows a higher concentration of the probability mass in a small neighbourhood of that point. Thus, we term the gradient of the cumulative probability mass at a point as the probability density at the point.
 <br><br>
 
 To reinforce the last few statements...
 
-1. Comparing the probability densities of each of two points in the sample space indicates a small neighbourhood of the point where there is a higher proportion of the total probability mass compared to the same small neighbourhood of the other point.
+1. Comparing the probability densities of each of two points in the sample space indicates a small neighbourhood of the point where there is a higher proportion of the total probability mass compared to the same small interval of the other point.
 2. Comparing the way the probability density values for each of two distributions helps us compare the way outcomes from each distribution are expected to be spread over space, time, the population or some other metric.
 3. The key purpose of probability density is to study the spread of the distribution, i.e. to study how and in what proportions is the total probability mass concentrated across the sample space.
 
