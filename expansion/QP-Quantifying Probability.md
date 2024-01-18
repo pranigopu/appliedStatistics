@@ -104,7 +104,7 @@ Let $\mathbb{P}$ be a probability distribution defined for a random process $\th
 
 ---
 
-_Now, set aside the above for a moment and consider the first-order derivative of_ $F$, _i.e._ $F^1$.
+_Now, set aside the above for a moment and consider the first-order derivative of_ $F$, _i.e._ $F^1$...
 
 Integrating $F^1$ for the interval $[a, b]$ results in:
 
