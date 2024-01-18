@@ -75,10 +75,7 @@ $f_*M(y) = M(f^{-1}(y)) = M(\{x | f(x) = y, x \in X\})$
 **NOTE**: $f^{-1}$ is the inverse function of $f$, defined such that it inputs an element $y$ of $Y$ and outputs the element or elements of $X$ that map to $y$ through $f$.
 
 ### Pushforward probability measure
-Let $\mathbb{P}$ be a probability distribution defined for a random process $\theta$ whose sample space is $X$. Now, consider the sample space $Y$ of $\theta$ after transforming any and every outcome of $\theta$ by a function $f$.
-<br><br>
-
-It is clear that since the transformed outcomes come from the same core random process, their distribution can be derived from the distribution of the untransformed outcomes, namely $\mathbb{P}$. In particular, we can see that the probability mass of any subset of values $B$ in $Y$ is exactly the probability mass of the set of all values in $X$ that map to the values in $B$, because (1) the values in $B$ are but a subset of transformed outcomes of $\theta$ and (2) the sample space of $\theta$ is $X$. Hence, the probability mass of $B$ is given by:
+Let $\mathbb{P}$ be a probability distribution defined for a random process $\theta$ whose sample space is $X$. Now, consider the sample space $Y$ of $\theta$ after transforming any and every outcome of $\theta$ by a function $f$. It is clear that since the transformed outcomes come from the same core random process, their distribution can be derived from the distribution of the untransformed outcomes, namely $\mathbb{P}$. In particular, we can see that the probability mass of any subset of values $B$ in $Y$ is exactly the probability mass of the set of all values in $X$ that map to the values in $B$, because (1) the values in $B$ are but a subset of transformed outcomes of $\theta$ and (2) the sample space of $\theta$ is $X$. Hence, the probability mass of $B$ is given by:
 
 $\mathbb{P}(\{x | f(x) = y \in B, x \in X\}) = \mathbb{P}(f^{-1}(B))$
 
