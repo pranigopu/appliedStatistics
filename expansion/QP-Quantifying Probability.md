@@ -104,7 +104,9 @@ Let $\mathbb{P}$ be a probability distribution defined for a random process $\th
 
 ---
 
-Now, set aside the above for a moment and consider the first-order derivative of $F$, i.e. $F^1$. Integrating $F^1$ for the interval $[a, b]$ results in:
+_Now, set aside the above for a moment and consider the first-order derivative of_ $F$, _i.e._ $F^1$.
+
+Integrating $F^1$ for the interval $[a, b]$ results in:
 
 $\displaystyle \int_a^b F^1(t) dt = [F(t)]_b^a = F(b) - F(a)$
 
