@@ -103,7 +103,7 @@ Why define the CDF? The CDF allows us to _conveniently_ study the proportional e
 _First, some buildup_...
 <br><br>
 
-Let $\mathbb{P}$ be a probability distribution defined for a random process $\theta$ whose sample space is $X$. Let $F$ be the CDF of $\mathbb{P}$. Now, given a point $x \in X$, consider the following:
+Let $\mathbb{P}$ be a probability distribution defined for a random process $\theta$ whose sample space is $X$. Let $F$ be the CDF of $\mathbb{P}$. Now, given a point $x \in X$ and an interval $[a, b] \subseteq X$, consider the following:
 
 - $F(x) = \mathbb{P}((-\infty, x])$ (_definition of CDF_)
 - $\mathbb{P}([a, b]) = \mathbb{P}((-\infty, b]) - \mathbb{P}((-\infty, a]) = F(b) - F(a)$
