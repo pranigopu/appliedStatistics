@@ -93,7 +93,7 @@ In the previous section, we defined probability distributions as measures, speci
 ### Cumulative distribution function
  Consider a probability distribution $\mathbb{P}$ defined for a random process $\theta$ whose sample space is $X$. Then, formally, the cumulative distribution function (CDF) $F$ of $\mathbb{P}$ at the point $x \in X$ is given by:
 
-$F(x) = \mathbb{P}((-\infty, t])$
+$F(x) = \mathbb{P}((-\infty, x])$
 
 i.e. the CDF value of any point $x$ is the cumulative probability mass upto $x$, i.e. the probability mass of all values less than or equal to $x$. $-\infty$ here only represents the idea of not fixing a lower bound; we want to include any and every point that may be below $x$, regardless of the given distribution's sample space. In practice, there may be a lower bound $b$ below which the probability mass is always zero; in such a case, the interval $(-\infty, x]$ can be replaced by $[b, x]$.
 
