@@ -41,6 +41,7 @@ A random process can be used to generalise the distribution of some metric of a 
 
 #### Sample
 A single individual drawn from a population.
+<br><br>
 
 **NOTE**: There are many sampling methods (random sampling, selective sampling, systematic sampling, etc.). However, random sampling with replacement is the one we shall use and the reason will become clear in the following subsections.
 
