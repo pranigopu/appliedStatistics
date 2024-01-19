@@ -85,7 +85,7 @@ Let $\mathbb{P}$ be a probability distribution defined for a random process $\th
 
 $\mathbb{P}(\{x \in X | f(x) = y \in B\}) = \mathbb{P}(f^{-1}(B))$
 
-$f^{-1}(B)$ _is shorthand for the set_ $\displaystyle \bigcup_{y \in B} f^{-1}(y)$.
+$f^{-1}(B)$ _is shorthand for the set_ $\displaystyle \bigcup_{y \in B} f^{-1}(y)$
 
 But this is exactly the pushforward measure of $\mathbb{P}$ through $f$ applied to $B$, i.e. $f_*\mathbb{P}(B)$. Hence, we see the use of pushforward in formalising the idea of applying a distribution of outcomes to a transformation of these outcomes using the transformation function. **_As a side note_**_, know that in the discrete case,_ $U$ _can hold one or more elements, but in the continuous case, the probability mass of any discrete set of points (one or many) is zero, so we have to generalise our statements using subsets (which could be continuous too)_.
 
