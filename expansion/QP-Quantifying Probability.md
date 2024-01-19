@@ -78,7 +78,7 @@ Let measure $M$ be defined for a set $X$ in a specific context. Now, consider a 
 
 $f_*M(y) = M(f^{-1}(y)) = M(\{x \in X | f(x) = y\})$
 
-**NOTE**: $f^{-1}$ is the inverse function of $f$, defined such that it inputs an element $y$ of $Y$ and outputs the element or elements of $X$ that map to $y$ through $f$.
+**NOTE**: $f^{-1}$ is the inverse of the function $f$, defined such that it inputs an element $y$ of $Y$ and outputs the element or elements of $X$ that map to $y$ through $f$. Note that $f^{-1}$ is not necessarily a function, since it may map one image to many preimages (thus, it is a one-to-many relation rather than a function).
 
 ### Pushforward probability measure
 Let $\mathbb{P}$ be a probability distribution defined for a random process $\theta$ whose sample space is $X$. Now, consider the sample space $Y$ of $\theta$ after transforming any and every outcome of $\theta$ by a function $f$. It is clear that since the transformed outcomes come from the same core random process, their distribution can be derived from the distribution of the untransformed outcomes, namely $\mathbb{P}$. In particular, we can see that the probability mass of any subset of values $B$ in $Y$ is exactly the probability mass of the set of all values in $X$ that map to the values in $B$, because (1) the values in $B$ are but a subset of transformed outcomes of $\theta$ and (2) the sample space of $\theta$ is $X$. Hence, the probability mass of $B$ is given by:
