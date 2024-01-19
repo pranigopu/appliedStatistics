@@ -68,7 +68,7 @@ Here, we shall see a way in which formalising probability as a kind of measure i
 _First, a key concept_...
 
 ### Pushforward measure
-Let measure $M$ be defined for a set $X$ in a specific context. Now, consider a set $Y$ wherein, in this context, each element of $Y$ is a function of an element in $X$, i.e. there is a function $f$ such that $f(x) = y, \forall x \in X, y \in Y$ (hence, note that $f$ is surjective, i.e. every image has a preimage). Then, the pushforward measure of $M$ through $f$ is given by:
+Let measure $M$ be defined for a set $X$ in a specific context. Now, consider a set $Y$ wherein, in this context, each element of $Y$ is a function of an element in $X$, i.e. there is a function $f$ such that $f(x) = y, \forall (x, y) \in X \times Y$. Hence, note that $f$ is surjective, i.e. every image (output of the function) has a preimage (input to the function). Then, the pushforward measure of $M$ through $f$ is given by:
 
 $f_*M(y) = M(f^{-1}(y)) = M(\{x | f(x) = y, x \in X\})$
 
