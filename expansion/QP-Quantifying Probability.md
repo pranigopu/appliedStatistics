@@ -122,7 +122,7 @@ With this result, we have that:
 
 $\displaystyle \mathbb{P}([a, b]) = \int_a^b F^1(t) dt$
 
-Hence, we get $F^1$ as the function such that its integral for any interval $[a, b]$ is the probability mass of that interval under the distribution $\mathbb{P}$. In other words, $F^1$ is a curve such that the area under the curve for any interval represents the probability mass of that interval under the distribution $\mathbb{P}$. From this, we can see that $F^1$ is valuable to help visualise, conceptualise and thus study the spread of the mass of the distribution.
+Hence, we get $F^1$ as the function such that its integral for any interval $[a, b]$ is the probability mass of that interval under the distribution $\mathbb{P}$. In other words, $F^1$ is a curve such that the area under the curve for any interval represents the probability mass of that interval under the distribution $\mathbb{P}$. From this, we can see that $F^1$ is valuable in visualising, conceptualising and thus studying the spread of the mass of the distribution.
 <br><br>
 
 Now, also consider what $F^1(x)$ represents for any point $x$ in the sample space. Evidently, it is the gradient, i.e. rate of change of the cumulative probability mass at that point. A higher gradient represents a higher rise in probability mass at that point, which shows a higher concentration of the probability mass in a small neighbourhood of that point. Thus, we term the gradient of the cumulative probability mass at a point as the probability density at the point.
