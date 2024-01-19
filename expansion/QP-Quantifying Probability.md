@@ -114,7 +114,7 @@ _Now, set this aside for a moment and consider the first-order derivative of_ $F
 
 Integrating $F^1$ for the interval $[a, b]$ results in:
 
-$\displaystyle \int_a^b F^1(t) dt = [F(t)]_b^a = F(b) - F(a)$
+$\displaystyle \int_a^b F^1(t) dt = [F(t)]_a^b = F(b) - F(a)$
 
 ---
 
@@ -131,7 +131,7 @@ Hence, we get $F^1$ as the function such that its integral for any interval $[a,
 Now, also consider what $F^1(x)$ represents for any point $x$ in the sample space. Evidently, it is the gradient, i.e. rate of change of the cumulative probability mass at that point. A higher gradient represents a higher rise in probability mass at that point, which shows a higher concentration of the probability mass in a small neighbourhood of that point. Thus, we term the gradient of the cumulative probability mass at a point as the probability density at the point.
 <br><br>
 
-To reinforce the last few statements...
+_To reinforce the last few statements_...
 
 1. Comparing the probability densities of each of two points in the sample space indicates a small neighbourhood of the point where there is a higher proportion of the total probability mass compared to the same small interval of the other point.
 2. Comparing the way the probability density values for each of two distributions helps us compare the way outcomes from each distribution are expected to be spread over space, time, the population or some other metric.
