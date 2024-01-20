@@ -11,9 +11,9 @@ This directory contains any works (mine, unless otherwise mentioned) that expand
     - `*.base.M`: Measure<br> _Formalising probability as a kind of measure_
         - `*.base.M.PF`: Pushforward measure<br> _Applying old distributions to new transformed spaces_
     - `*.base.Math`: Mathematically detailing probability measures
-        - `.base.Math.CDF`: Cumulative probability mass & the CDF function
-        - `.base.Math.PDF`: Probability density & the PDF function
-        - `.base.Math.topic.RETD`: Relating empirical & theoretical distributions
+        - `*.base.Math.CDF`: Cumulative probability mass & the CDF function
+        - `*.base.Math.PDF`: Probability density & the PDF function
+        - `*.base.Math.topic.RETD`: Relating empirical & theoretical distributions
 
 **Quantifying plausibility**:
 
