@@ -2,7 +2,9 @@
 This repository records the learning, lab work and examinations done during and after the applied statistics course of my master's in AI degree.
 
 ## Additional links
-The following is the link to my Google Drive folder containing more detailed notes for applied statistics:<br>[appliedStatistics](https://drive.google.com/drive/folders/1e9IoNfvnuUaHBwfzlJzKmCta0sVJWykH?usp=sharing)
+The following is the link to my webpage containing more detailed notes for applied statistics:
+
+[**Statistics**](https://pranigopu.github.io/statistics/)
 
 ## Lab sessions
 
