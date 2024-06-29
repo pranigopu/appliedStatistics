@@ -2,9 +2,7 @@
 This repository records the learning, lab work and examinations done during and after the applied statistics course of my master's in AI degree.
 
 ## Additional links
-The following is the link to my webpage containing more detailed notes for applied statistics:
-
-[**Statistics**](https://pranigopu.github.io/statistics/)
+The following is the link to my webpage containing more detailed notes for statistics: [**Statistics**](https://pranigopu.github.io/statistics/)
 
 ## Lab sessions
 
